@@ -1,0 +1,99 @@
+#login-screen {
+    background: linear-gradient(314deg, #211f22, #3c3041);
+    .main-container {
+        background-color: #FFF;
+        height: 650px;
+        box-shadow: rgb(0 0 0 / 47%) 6px 6px 8px;
+        overflow: hidden;
+        
+        .login-title-1 {
+            font-size: 60px;
+            font-weight: 400;
+            letter-spacing: -3px;
+            color: #211f1f;
+        }
+
+        .login-title-2 {
+            font-size: 65px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-top: -8px;
+            line-height: 64px;
+            color: #211f1f;
+        }
+
+        .login-entrar-button {
+            padding: 13px 16px;
+            width: 100%;
+            background: #5432af;
+            border-color: #162976;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .login-entrar-button:hover {
+            background: #452797;
+            border-color: #162976;
+        }
+
+        input:enabled:hover {
+            border-color: #5432af;
+        }
+
+        input:enabled:focus {
+            outline: 0 none;
+            outline-offset: 0;
+            box-shadow: 0 0 0 0.2rem #c8b9ff;
+            border-color: #5432af;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px #f3effa inset !important;
+        }
+
+        .cicle-buttons-container {
+            margin-top: 10px;
+
+            .user-register-button {
+                background-color: #9176dc;
+                border-color: #9176dc;
+            }
+            
+            .forgot-password-button {
+                margin-left: 10px;
+                background-color: #ca67e3;
+                border-color: #ca67e3;
+            }
+        }
+
+    }
+    
+    .login-password-input{
+        .p-icon-field {
+            width: 100%;
+        }
+    }
+}
+.forgot-password-tooltip {
+    .p-tooltip-text {
+        background-color: #ca67e3 !important; /* Escolha sua cor de fundo desejada */
+        color: white !important; /* Cor do texto do tooltip */
+    }
+    /* Arrow color */
+    .p-tooltip-arrow {
+        border-bottom-color: #ca67e3 !important; /* Ajuste para corresponder à cor de fundo */
+    }
+}
+.user-register-tooltip {
+    .p-tooltip-text {
+        background-color: #9176dc !important; /* Escolha sua cor de fundo desejada */
+        color: white !important; /* Cor do texto do tooltip */
+    }
+    /* Arrow color */
+    .p-tooltip-arrow {
+        border-bottom-color: #9176dc !important; /* Ajuste para corresponder à cor de fundo */
+    }
+}
