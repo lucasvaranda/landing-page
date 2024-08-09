@@ -17,11 +17,11 @@ export default function LoginScreen() {
     return (
         <div id="login-screen" className="w-full h-full flex flex-column align-items-center justify-content-center">
             <div className="main-container w-6 flex border-round-sm">
-                <div className="w-6 h-full">
+                <div className="w-6 h-full login-content">
                     <div className="flex flex-column align-items-center justify-content-center h-full">
                         <div className="flex flex-column align-items-start w-8" style={{ marginBottom: '10px' }}>
                             <span className="roboto-condensed-font login-title-1">Olá,</span>
-                            <span className="roboto-condensed-font login-title-2">BEM VINDO!</span>
+                            <span className="roboto-condensed-font login-title-2">BEM<br></br> VINDO!</span>
                         </div>
                         <div className="flex flex-column align-items-start gap-2 w-8">
                             <label htmlFor="username">Usuário</label>
@@ -55,7 +55,7 @@ export default function LoginScreen() {
                         </div>
                     </div>
                 </div>
-                <div className="w-6 h-full flex align-items-center justify-content-center" style={{ backgroundColor: '#ede4f7'}}>
+                <div className="w-6 h-full flex align-items-center justify-content-center login-content image-container" style={{ backgroundColor: '#ede4f7'}}>
                     <div style={{ position: 'relative' }}>
                         <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ zIndex: 2, position: 'relative' }} />
                         <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ position: 'absolute', bottom: '-1px', left: '0px', opacity: '0.4' }} />
