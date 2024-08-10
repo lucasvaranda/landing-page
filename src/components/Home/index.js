@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { InputText } from 'primereact/inputtext';
+import { InputText } from "primereact/inputtext";
+import { IconField } from 'primereact/iconfield';
+import { InputIcon } from 'primereact/inputicon';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { useNavigate } from "react-router-dom";
@@ -8,6 +10,7 @@ import './index.scss';
 
 export default function Home() {
     const [likedProducts, setLikedProducts] = useState({});
+    const [value, setValue] = useState("");
 
     const toggleLike = (productId) => {
         setLikedProducts((prevLikedProducts) => ({
@@ -320,7 +323,7 @@ export default function Home() {
                     <span style={{ textAlign: 'center' }}>Sweet Desserts</span>
                 </div>
             </div>
-            <div style={{ width: '80%', marginBottom: '50px' }}>
+            <div style={{ width: '80%' }}>
                 <div className="shop-container">
                     <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>OUR SPECIAL COFFEE</div>
                     <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
@@ -348,6 +351,25 @@ export default function Home() {
                     <Carousel value={reviews} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} className="custom-carousel-review" circular
                     itemTemplate={reviewTemplate} />
                 </div>
+
+                <div className="join-container">
+                    <img className="hands-img" src="/images/png/border-coffee.png" width={500}></img>
+                    <div className="content">
+                        <div className="lato-black" style={{ fontSize: '40px' }}>Join in and get 15% Off!</div>
+                        <div className="lato-bold" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Subscribe to our newsletter and be the first to know about exclusive deals, new arrivals, and special offers.<br></br> Don’t miss out on your chance to enjoy a 15% discount on your first purchase!</div>
+                        <div style={{ display: 'flex', width: '70%' }}>
+                            <IconField iconPosition="left" style={{ width: '75%' }}>
+                                <InputIcon className="pi pi-envelope w-full" style={{ marginLeft: '5px' }}> </InputIcon>
+                                <InputText className="round-input w-full" style={{ paddingLeft: '38px' }} value={value} onChange={(e) => setValue(e.target.value)} />
+                            </IconField>
+                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', width: '25%', marginLeft: '5px' }}>SUBSCRIBE</div>
+                        </div>
+                    </div>
+                    <img className="coffee-portion-img" src="/images/png/border-coffee.png" width={500}></img>
+                </div>
+            </div>
+            <div className="footer-container">
+                Teste
             </div>
         </div>
     )

@@ -90,7 +90,8 @@
     }
 
     .buy-button {
-        background-color: #382f32;
+        text-align: center;
+        background-color: #382f2f;
         color: #FFF;
         padding: 13px 25px;
         font-size: 12px;
@@ -121,7 +122,7 @@
         }
     }
     .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
-        background-color: #382f32;
+        background-color: #382f2f;
     }
     
 
@@ -186,5 +187,49 @@
             transform: scale(0.95);
             transition: transform 1.2s ease;
         }
+    }
+
+    .join-container {
+        width: 100%;
+        background-color: #d5c5a4;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        overflow: hidden;
+        min-height: 500px;
+
+        .content {
+            width: 60%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .hands-img {
+            transform: rotate(90deg);
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+        .coffee-portion-img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transform: rotate(270deg);
+        }
+        
+    }
+
+    .round-input {
+        border-radius: 20px;
+    }
+
+    .footer-container {
+        background-color: #1c1919;
+        width: 100%;
+        min-height: 300px;
+        height: 300px;
     }
 }
