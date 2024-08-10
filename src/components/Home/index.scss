@@ -99,7 +99,7 @@
     }
 
     .shop-container {
-        background-color: #FFF;
+        background-color: #f0e8e1;
         min-height: 1550px;
         height: 1550px;
         width: 100%;
@@ -107,22 +107,27 @@
         border-radius: 4px 4px 0px 0px;
     }
 
-    .p-carousel-items-container {
-        height: 650px;
+    .custom-carousel {
+        .p-carousel-items-container {
+            height: 650px;
+        }
+        
     }
-    
-    .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
-        background-color: #382f32;
-    }
+
     .p-carousel-indicator {
         button {
             border-radius: 10px;
+            background-color: #FFF;
         }
     }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+        background-color: #382f32;
+    }
+    
 
     .beans-container {
         width: 100%;
-        background-color: #e7e1d5;
+        background-color: #d5c5a4;
         display: flex;
         position: relative;
         justify-content: center;
@@ -147,6 +152,39 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+        }
+    }
+
+    .reviews-container {
+        background-color: #f0e8e1;
+        height: 500px;
+        .title {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    .review-card {
+        background-color: #f6f3f0;
+    }
+
+    .custom-carousel-review {
+        .p-carousel-container {
+            height: 250px;
+        }
+
+        .p-carousel-indicator {
+            button {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        
+        .p-carousel-item-start, .p-carousel-item-end {
+            transform: scale(0.95);
+            transition: transform 1.2s ease;
         }
     }
 }

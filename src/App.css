@@ -122,3 +122,16 @@
   font-style: normal;
 }
 
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playwrite-us-modern-400 {
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
