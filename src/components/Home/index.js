@@ -70,6 +70,51 @@ export default function Home() {
         }
     ];
 
+    const foods = [
+        {
+            name: 'Ice Cream Cake',
+            description: "A layered dessert combining cake and ice cream.",
+            price: 100,
+            image: 'cmd-6.jpg'
+        },
+        {
+            name: 'Churros',
+            description: "Fried dough pastries, typically dusted with sugar.",
+            price: 100,
+            image: 'cmd-7.jpg'
+        },
+        {
+            name: 'Strawberry Pie',
+            description: "A pie filled with sweet, fresh strawberries.",
+            price: 100,
+            image: 'cmd-3.jpg'
+        },
+        {
+            name: 'Chocolate Waffles',
+            description: "Waffles infused with chocolate, served warm.",
+            price: 100,
+            image: 'cmd-4.jpg'
+        },
+        {
+            name: 'Pudding',
+            description: "A creamy dessert, often flavored with vanilla or chocolate.",
+            price: 100,
+            image: 'cmd-2.jpg'
+        },
+        {
+            name: 'Brownies',
+            description: "Dense, chocolate squares with a chewy texture.",
+            price: 100,
+            image: 'cmd-1.jpg'
+        },
+        {
+            name: 'Chocolate Muffins',
+            description: "Soft muffins with rich chocolate flavor.",
+            price: 100,
+            image: 'cmd-5.jpg'
+        }
+    ];
+
     const productTemplate = (product) => {
         return (
             <div className="surface-border border-round m-2 text-center py-5 px-3 h-full flex flex-column justify-content-between">
@@ -91,7 +136,7 @@ export default function Home() {
     return (
         <div id="main-screen" className="w-full h-full flex flex-column align-items-center">
             <div id="navbar-container">
-                <span className="title lato-black-italic">Coffee</span>
+                <span className="title lato-black">Coffee</span>
                 <ul>
                     <li className="bebas-neue-regular"><a href="#home">Home</a></li>
                     <li className="bebas-neue-regular"><a href="#coffee">Coffee</a></li>
@@ -118,28 +163,42 @@ export default function Home() {
                     <div className="custom-buttom">ORDER NOW</div>
                 </div>
             </div>
-            <div className="lato-bold" style={{ width: '60%', display: 'flex', justifyContent: 'space-around', margin: '150px 0px' }}>
+            <div className="lato-bold" style={{ width: '60%', display: 'flex', justifyContent: 'space-around', margin: '150px 0px', opacity: '0.7' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <img src="/images/png/coffee-ic-1.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Grab & Go</span>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <img src="/images/png/coffee-ic-5.png" width={70}></img>
+                    <img src="/images/png/coffee-ic.png" width={70}></img>
                     <span style={{ textAlign: 'center' }}>Brewed to Perfection</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <img src="/images/png/coffee-ic-6.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Order Your Blend</span>
+                    <img src="/images/png/delivery-ic.png" width={70}></img>
+                    <span style={{ textAlign: 'center' }}>Grab & Go</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <img src="/images/png/coffee-ic-3.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Premium Beans</span>
+                    <img src="/images/png/stores-ic.png" width={70}></img>
+                    <span style={{ textAlign: 'center' }}>Coffee Shop Haven</span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <img src="/images/png/cake-ic.png" width={70}></img>
+                    <span style={{ textAlign: 'center' }}>Sweet Desserts</span>
                 </div>
             </div>
-            <div className="shop-container">
-                <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>OUR SPECIAL COFFEE</div>
-                <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
-                autoplayInterval={3000} itemTemplate={productTemplate} />
+            <div style={{ width: '80%', marginBottom: '50px' }}>
+                <div className="shop-container">
+                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>OUR SPECIAL COFFEE</div>
+                    <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
+                    itemTemplate={productTemplate} />
+                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center', marginTop: '50px' }}>OUR SPECIAL DESSERT</div>
+                    <Carousel value={foods} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
+                    itemTemplate={productTemplate} />
+                </div>
+                <div className="beans-container">
+                    <img className="hands-img" src="/images/png/coffee-wave.png" width={550}></img>
+                    <div className="content">
+                        <div className="lato-black" style={{ fontSize: '40px' }}>Check out our best coffee beans, carefully selected for the perfect brew.</div>
+                        <div className="lato-bold" style={{ fontSize: '16px' }}>Discover our finest selection of coffee beans, carefully sourced and expertly roasted to bring out the richest flavors.<br></br> Treat yourself to the best coffee experience with our premium beans, perfect for every coffee lover.</div>
+                        <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>BUY</div>
+                    </div>
+                    <img className="coffee-portion-img" src="/images/png/coffee-and-beans.png" width={350}></img>
+                </div>
             </div>
         </div>
     )
