@@ -3,6 +3,19 @@
     overflow-y: auto;
     background-color: #e2d9c8;
 
+    .image-container {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: #14040059;
+        background-size: cover;
+        background-position: 30% 70%;
+    }
+
     .custom-buttom {
         border: 2px solid #FFF;
         border-radius: 2px;
@@ -23,6 +36,7 @@
     }
     
     #navbar-container {
+        z-index: 1000;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -72,5 +86,27 @@
         outline: 0 none;
         outline-offset: 0;
         box-shadow: 0 0 0 0.2rem #a37255;
+    }
+
+    .buy-button {
+        background-color: #382f32;
+        color: #FFF;
+        padding: 13px 25px;
+        font-size: 12px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+
+    .shop-container {
+        background-color: #FFF;
+        min-height: 1200px;
+        height: 1200px;
+        width: 80%;
+        padding: 30px;
+        border-radius: 4px;
+    }
+
+    .p-carousel-items-container {
+        height: 650px;
     }
 }
