@@ -2,6 +2,25 @@
     max-height: 100%;
     overflow-y: auto;
     background-color: #e2d9c8;
+
+    .custom-buttom {
+        border: 2px solid #FFF;
+        border-radius: 2px;
+        color: #FFF;
+        padding: 20px 40px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    .custom-buttom:hover {
+        background-color: #FFF;
+        color: #2b2527;
+        transition: all 0.2s;
+    }
     
     #navbar-container {
         display: flex;

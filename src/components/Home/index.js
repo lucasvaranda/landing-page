@@ -10,20 +10,30 @@ export default function Home() {
         <div id="main-screen" className="w-full h-full flex flex-column align-items-center justify-content-center">
             <div style={{
                 width: '100%',
-                height: '660px',
-                minHeight: '660px',
-                position: 'relative',
+                height: '100vh',
+                position: 'fixed',
+                top: '0px',
+                left: '0px',
                 display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
                 flexDirection: 'column',
                 backgroundColor: '#14040059'
             }}>
-                <img src="/images/png/coffe-ia-2.png" style={{ position: 'absolute', width: '100%', height: '660px', objectFit: 'cover', objectPosition: '30% 70%' }}></img>
-                <div style={{ width: '60%', zIndex: 2, marginBottom: '110px' }}>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '25px' }}>Welcome!</div>
-                    <div className="montserrat-bold" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', marginBottom: '10px' }}>We serve the richest coffee<br></br>in the city!</div>
-                    <Button label="Order Now" className="order-now-button lato-bold" rounded />
+                <img src="/images/png/home-background-2.jpeg" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '30% 70%', position: 'fixed', top: '0px', left: '0px' }}></img>
+                <div style={{ width: '60%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <img src="/images/png/coffee-beans-logo-light.png" style={{ width: '200px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px' }}>Welcome to</div>
+                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', letterSpacing: '8px' }}>ARTISAN COFFE</div>
+                    <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
+                        <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
+                        <img src="/images/png/coffee-beans-ic.png" style={{ width: '25px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)', margin: '0px 15px' }} ></img>
+                        <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
+                    </div>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px', marginBottom: '30px', textAlign: 'center' }}>We serve the richest coffee in<br></br> the city!</div>
+
+                    
+                    <div className="custom-buttom">ORDER NOW</div>
                 </div>
             </div>
             <div id="navbar-container">
