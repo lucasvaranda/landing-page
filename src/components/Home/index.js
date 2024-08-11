@@ -281,10 +281,10 @@ export default function Home() {
                 <span className="title lato-black">Coffee</span>
                 <ul>
                     <li className="bebas-neue-regular"><a href="#home">Home</a></li>
-                    <li className="bebas-neue-regular"><a href="#coffee">Coffee</a></li>
-                    <li className="bebas-neue-regular"><a href="#bakery">Bakery</a></li>
                     <li className="bebas-neue-regular"><a href="#shop">Shop</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">About</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">Beans</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">Reviews</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">Subscribe</a></li>
                     <li className="bebas-neue-regular"><a href="#login">Login</a></li>
                 </ul>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
@@ -369,7 +369,23 @@ export default function Home() {
                 </div>
             </div>
             <div className="footer-container">
-                Teste
+                <img src="/images/png/coffee-beans-logo-light.png" width={120} style={{ height: '120px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
+                <div className="flex" style={{ color: '#FFF', letterSpacing: '1px', gap: '15px' }}>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>HOME</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>CONTACT</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>ABOUT</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>LOCATION</div>
+                </div>
+                <div style={{ color: '#FFF', letterSpacing: '1px' }}>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOCIAL MEDIA</div>
+                    <div className="flex" style={{ gap: '10px' }}>
+                        <div><i className="pi pi-instagram" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                        <div><i className="pi pi-facebook" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                        <div><i className="pi pi-twitter" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                        <div><i className="pi pi-tiktok" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                        <div><i className="pi pi-linkedin" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     )

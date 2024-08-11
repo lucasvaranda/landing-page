@@ -51,31 +51,31 @@
             font-size: 32px;
             color: #FFF;
         }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            color: #FFF;
-            li {
-                margin-bottom: -8px;
-                float: left;
-            }
-            
-            li a {
-                font-size: 26px;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 16px;
-                text-decoration: none;
-            }
-            
-            li a:hover {
-                // background-color: #111111;
-            }
+        
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        color: #FFF;
+        li {
+            margin-bottom: -8px;
+            float: left;
         }
-
+        
+        li a {
+            font-size: 26px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            // background-color: #111111;
+        }
     }
     .order-now-button {
         background-color: #FFF;
@@ -229,8 +229,11 @@
     .footer-container {
         background-color: #1c1919;
         width: 100%;
-        min-height: 300px;
-        height: 300px;
+        min-height: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 
