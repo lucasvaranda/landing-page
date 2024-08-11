@@ -45,43 +45,43 @@ export default function Home() {
     const products = [
         {
             id: 1,
-            name: 'Latte Coffee',
-            description: "Espresso with steamed milk and light foam.",
+            name: 'Café Latte',
+            description: "Expresso com leite vaporizado e leve espuma.",
             price: 100,
             image: 'op-1-latte.jpg'
         },
         {
             id: 2,
-            name: 'Iced Coffee',
-            description: "Chilled coffee over ice, often sweetened.",
+            name: 'Café Gelado',
+            description: "Café resfriado com gelo, frequentemente adoçado.",
             price: 100,
             image: 'op-2-iced.jpg'
         },
         {
             id: 3,
             name: 'Mocha',
-            description: "Espresso with chocolate and steamed milk.",
+            description: "Expresso com chocolate e leite vaporizado.",
             price: 100,
             image: 'op-3-mocha.jpg'
         },
         {
             id: 4,
-            name: 'Filtered Coffee',
-            description: "Brewed with hot water passing through grounds.",
+            name: 'Café Filtrado',
+            description: "Preparado com água quente passando pelos grãos.",
             price: 100,
             image: 'op-4-filtered.jpg'
         },
         {
             id: 5,
-            name: 'Black Coffee',
-            description: "Plain coffee without any milk or sugar.",
+            name: 'Café Preto',
+            description: "Café simples, sem leite ou açúcar.",
             price: 100,
             image: 'op-5-black.jpg'
         },
         {
             id: 6,
-            name: 'Beaten Coffee',
-            description: "Whipped with sugar to creamy texture before brewing.",
+            name: 'Café Batido',
+            description: "Café batido com açúcar até uma textura cremosa antes de preparar.",
             price: 100,
             image: 'op-6-beaten.jpg'
         }
@@ -90,50 +90,50 @@ export default function Home() {
     const foods = [
         {
             id: 7,
-            name: 'Ice Cream Cake',
-            description: "A layered dessert combining cake and ice cream.",
+            name: 'Bolo de Sorvete',
+            description: "Uma sobremesa em camadas combinando bolo e sorvete.",
             price: 100,
             image: 'cmd-6.jpg'
         },
         {
             id: 8,
             name: 'Churros',
-            description: "Fried dough pastries, typically dusted with sugar.",
+            description: "Massa frita, geralmente polvilhada com açúcar.",
             price: 100,
             image: 'cmd-7.jpg'
         },
         {
             id: 9,
-            name: 'Strawberry Pie',
-            description: "A pie filled with sweet, fresh strawberries.",
+            name: 'Torta de Morango',
+            description: "Uma torta recheada com morangos frescos e doces.",
             price: 100,
             image: 'cmd-3.jpg'
         },
         {
             id: 10,
-            name: 'Chocolate Waffles',
-            description: "Waffles infused with chocolate, served warm.",
+            name: 'Waffles de Chocolate',
+            description: "Waffles com infusão de chocolate, servidos quentes.",
             price: 100,
             image: 'cmd-4.jpg'
         },
         {
             id: 11,
-            name: 'Pudding',
-            description: "A creamy dessert, often flavored with vanilla or chocolate.",
+            name: 'Pudim',
+            description: "Uma sobremesa cremosa, com sabor de baunilha ou chocolate.",
             price: 100,
             image: 'cmd-2.jpg'
         },
         {
             id: 12,
             name: 'Brownies',
-            description: "Dense, chocolate squares with a chewy texture.",
+            description: "Quadrados densos de chocolate com uma textura macia.",
             price: 100,
             image: 'cmd-1.jpg'
         },
         {
             id: 13,
-            name: 'Chocolate Muffins',
-            description: "Soft muffins with rich chocolate flavor.",
+            name: 'Muffins de Chocolate',
+            description: "Muffins macios com sabor intenso de chocolate.",
             price: 100,
             image: 'cmd-5.jpg'
         }
@@ -143,7 +143,7 @@ export default function Home() {
         {
             id: 1,
             name: 'Alice Martins',
-            description: "The cappuccino here is amazing! Creamy with a light and flavorful foam. Perfect way to start the day.",
+            description: "O cappuccino aqui é incrível! Cremoso, com uma espuma leve e saborosa. Perfeito para começar o dia.",
             grade: 5,
             date: '2 days ago',
             image: 'pic-5.jpg'
@@ -151,7 +151,7 @@ export default function Home() {
         {
             id: 2,
             name: 'Lucas Varanda',
-            description: "The chocolate waffles are sensational! The chocolate melts in your mouth, and the waffles have a slight crunch. Highly recommended!",
+            description: "O Mocha é maravilhoso! O sabor do chocolate combina perfeitamente com o café, e é super cremoso. É aquela bebida aconchegante que você não pode deixar de provar!",
             grade: 5,
             date: '5 days ago',
             image: 'pic-1.jpg'
@@ -159,7 +159,7 @@ export default function Home() {
         {
             id: 3,
             name: 'Eduardo Lima',
-            description: "The strawberry pie has a crispy crust and a well-balanced filling. I just wish it had a bit more strawberries.",
+            description: "A torta de morango tem uma crosta crocante e um recheio bem equilibrado. Só gostaria que tivesse um pouco mais de morangos.",
             grade: 4,
             date: '1 week ago',
             image: 'pic-3.jpg'
@@ -167,7 +167,7 @@ export default function Home() {
         {
             id: 4,
             name: 'Beatriz Santos',
-            description: "The churros filled with dulce de leche are wonderful! Crispy on the outside and soft on the inside, with just the right amount of filling.",
+            description: "Os churros recheados com doce de leite são maravilhosos! Crocantes por fora e macios por dentro, com a quantidade certa de recheio.",
             grade: 4,
             date: '3 days ago',
             image: 'pic-6.jpg'
@@ -175,7 +175,7 @@ export default function Home() {
         {
             id: 5,
             name: 'Fernanda Pereira',
-            description: "The pudding is very good, with a creamy texture and a delicious vanilla flavor. A well-executed classic.",
+            description: "O pudim é muito bom, com uma textura cremosa e um delicioso sabor de baunilha. Um clássico bem executado.",
             grade: 5,
             date: '4 days ago',
             image: 'pic-7.jpg'
@@ -183,7 +183,7 @@ export default function Home() {
         {
             id: 6,
             name: 'Gabriel Souza',
-            description: "The brownies have an intense chocolate flavor and a dense texture that melts in your mouth. Great pairing with a strong coffee.",
+            description: "Os brownies têm um sabor intenso de chocolate e uma textura densa que derrete na boca. Ótima combinação com um café forte.",
             grade: 5,
             date: '6 days ago',
             image: 'pic-2.jpg'
@@ -191,7 +191,7 @@ export default function Home() {
         {
             id: 7,
             name: 'Helena Costa',
-            description: "The chocolate muffins are soft and very flavorful, with chocolate chunks in every bite.",
+            description: "Os muffins de chocolate são macios e muito saborosos, com pedaços de chocolate em cada mordida.",
             grade: 5,
             date: '1 week ago',
             image: 'pic-8.jpg'
@@ -199,7 +199,7 @@ export default function Home() {
         {
             id: 8,
             name: 'Mariana Ribeiro',
-            description: "The espresso is just perfect! Strong, bold, and with a rich aroma that wakes you up instantly. My go-to coffee every morning.",
+            description: "O expresso é simplesmente perfeito! Forte, encorpado e com um aroma rico que te desperta instantaneamente. Meu café favorito todas as manhãs.",
             grade: 5,
             date: '2 days ago',
             image: 'pic-9.jpg'
@@ -207,7 +207,7 @@ export default function Home() {
         {
             id: 9,
             name: 'Carlos Silva',
-            description: "The lemon tart is refreshing and tangy, with a perfect balance of sweetness. The crust is buttery and complements the filling nicely.",
+            description: "Os waffles de chocolate são sensacionais! O chocolate derrete na boca e os waffles têm uma leve crocância. Altamente recomendado!",
             grade: 4,
             date: '3 days ago',
             image: 'pic-4.jpg'
@@ -234,7 +234,7 @@ export default function Home() {
                     <div className="lato-regular" style={{ fontSize: '16px', textAlign: 'start', minHeight: '38px' }}>{product.description}</div>
                     <div className="mt-3 flex flex-wrap gap-2 align-items-center justify-content-between">
                         <div className="lato-black">R${product.price}</div>
-                        <div className="buy-button lato-regular">ORDER&nbsp; NOW</div>
+                        <div className="buy-button lato-regular">COMPRAR</div>
                     </div>
                 </div>
             </div>
@@ -280,55 +280,55 @@ export default function Home() {
             <div id="navbar-container">
                 <span className="title lato-black">Coffee</span>
                 <ul>
-                    <li className="bebas-neue-regular"><a href="#home">Home</a></li>
-                    <li className="bebas-neue-regular"><a href="#shop">Shop</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">Beans</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">Reviews</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">Subscribe</a></li>
-                    <li className="bebas-neue-regular"><a href="#login">Login</a></li>
+                    <li className="bebas-neue-regular"><a href="#home">INÍCIO</a></li>
+                    <li className="bebas-neue-regular"><a href="#shop">LOJA</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">GRÃOS</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">AVALIAÇÕES</a></li>
+                    <li className="bebas-neue-regular"><a href="#about">REGISTRE-SE</a></li>
+                    <li className="bebas-neue-regular"><a href="#login">ENTRAR</a></li>
                 </ul>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
             </div>
             <div className="image-container" style={{backgroundImage: 'url("/images/png/home-background-2.jpeg")' }}>
                 <div style={{ width: '60%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/coffee-beans-logo-light.png" style={{ width: '200px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px' }}>Welcome to</div>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px' }}>Bem-vindo ao</div>
                     <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', letterSpacing: '8px' }}>ARTISAN COFFE</div>
                     <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
                         <img src="/images/png/coffee-beans-ic.png" style={{ width: '25px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)', margin: '0px 15px' }} ></img>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
                     </div>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px', marginBottom: '30px', textAlign: 'center' }}>We serve the richest coffee in<br></br> the city!</div>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px', marginBottom: '30px', textAlign: 'center' }}>Servimos o café mais rico<br></br>  da cidade!</div>
 
                     
-                    <div className="custom-buttom">ORDER NOW</div>
+                    <div className="custom-buttom">PEÇA AGORA</div>
                 </div>
             </div>
             <div className="lato-bold" style={{ width: '60%', display: 'flex', justifyContent: 'space-around', margin: '150px 0px', opacity: '0.7' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/coffee-ic.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Brewed to Perfection</span>
+                    <span style={{ textAlign: 'center' }}>Coado à Perfeição</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/delivery-ic.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Grab & Go</span>
+                    <span style={{ textAlign: 'center' }}>Pegue e Leve</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/stores-ic.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Coffee Shop Haven</span>
+                    <span style={{ textAlign: 'center' }}>Oásis da Cafeteria</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/cake-ic.png" width={70}></img>
-                    <span style={{ textAlign: 'center' }}>Sweet Desserts</span>
+                    <span style={{ textAlign: 'center' }}>Doces Delícias</span>
                 </div>
             </div>
             <div style={{ width: '80%' }}>
                 <div className="shop-container">
-                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>OUR SPECIAL COFFEE</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>NOSSOS CAFÉS ESPECIAIS</div>
                     <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
                     itemTemplate={productTemplate} />
-                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center', marginTop: '50px' }}>OUR SPECIAL DESSERT</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center', marginTop: '50px' }}>NOSSAS SOBREMESAS ESPECIAIS</div>
                     <Carousel value={foods} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
                     itemTemplate={productTemplate} />
                 </div>
@@ -336,17 +336,17 @@ export default function Home() {
                 <div className="beans-container">
                     <img className="hands-img" src="/images/png/coffee-wave.png" width={550}></img>
                     <div className="content">
-                        <div className="lato-black" style={{ fontSize: '40px' }}>Check out our best coffee beans, carefully selected for the perfect brew.</div>
-                        <div className="lato-bold" style={{ fontSize: '16px' }}>Discover our finest selection of coffee beans, carefully sourced and expertly roasted to bring out the richest flavors.<br></br> Treat yourself to the best coffee experience with our premium beans, perfect for every coffee lover.</div>
-                        <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>BUY</div>
+                        <div className="lato-black" style={{ fontSize: '40px' }}>Confira nossos melhores grãos de café, cuidadosamente selecionados para o preparo perfeito.</div>
+                        <div className="lato-bold" style={{ fontSize: '16px' }}>Descubra nossa melhor seleção de grãos de café, cuidadosamente escolhidos e torrados com maestria para realçar os sabores mais ricos.<br></br> Presenteie-se com a melhor experiência de café com nossos grãos premium, perfeitos para todo amante de café.</div>
+                        <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/coffee-and-beans.png" width={350}></img>
                 </div>
                 
                 <div className="reviews-container">
                     <div className="title">
-                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Come and join</div>
-                        <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px' }}>OUR&nbsp; HAPPY&nbsp; CUSTOMERS</div>
+                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Junte-se a Nós</div>
+                        <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div>
                     </div>
                     <Carousel value={reviews} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} className="custom-carousel-review" circular
                     itemTemplate={reviewTemplate} />
@@ -355,8 +355,8 @@ export default function Home() {
                 <div className="join-container">
                     <img className="hands-img" src="/images/png/border-coffee.png" width={500}></img>
                     <div className="content">
-                        <div className="lato-black" style={{ fontSize: '40px' }}>Join in and get 15% Off!</div>
-                        <div className="lato-bold" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Subscribe to our newsletter and be the first to know about exclusive deals, new arrivals, and special offers.<br></br> Don’t miss out on your chance to enjoy a 15% discount on your first purchase!</div>
+                        <div className="lato-black" style={{ fontSize: '40px' }}>Registre-se e ganhe 15% de desconto!</div>
+                        <div className="lato-bold" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Inscreva-se na nossa newsletter e seja o primeiro a saber sobre ofertas exclusivas, novos produtos e promoções especiais.<br></br> Não perca a chance de aproveitar 15% de desconto na sua primeira compra!</div>
                         <div style={{ display: 'flex', width: '70%' }}>
                             <IconField iconPosition="left" style={{ width: '75%' }}>
                                 <InputIcon className="pi pi-envelope w-full" style={{ marginLeft: '5px' }}> </InputIcon>
@@ -370,11 +370,11 @@ export default function Home() {
             </div>
             <div className="footer-container">
                 <img src="/images/png/coffee-beans-logo-light.png" width={120} style={{ height: '120px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
-                <div className="flex" style={{ color: '#FFF', letterSpacing: '1px', gap: '15px' }}>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>HOME</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>CONTACT</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>ABOUT</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>LOCATION</div>
+                <div className="flex" style={{ color: '#FFF', letterSpacing: '1px', gap: '25px' }}>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>INÍCIO</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>FALE CONOSCO</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOBRE NÓS</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>LOCALIZAÇÃO</div>
                 </div>
                 <div style={{ color: '#FFF', letterSpacing: '1px' }}>
                     <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOCIAL MEDIA</div>
