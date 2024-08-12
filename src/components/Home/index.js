@@ -21,22 +21,40 @@ export default function Home() {
 
     const responsiveOptions = [
         {
-            breakpoint: '1400px',
-            numVisible: 2,
+            breakpoint: '1950px',
+            numVisible: 4,
             numScroll: 1
         },
         {
-            breakpoint: '1199px',
+            breakpoint: '1600px',
             numVisible: 3,
             numScroll: 1
         },
         {
-            breakpoint: '767px',
+            breakpoint: '1300px',
             numVisible: 2,
             numScroll: 1
         },
         {
-            breakpoint: '575px',
+            breakpoint: '880px',
+            numVisible: 1,
+            numScroll: 1
+        }
+    ];
+
+    const reviewsResponsiveOptions = [
+        {
+            breakpoint: '1950px',
+            numVisible: 3,
+            numScroll: 1
+        },
+        {
+            breakpoint: '1500px',
+            numVisible: 2,
+            numScroll: 1
+        },
+        {
+            breakpoint: '1200px',
             numVisible: 1,
             numScroll: 1
         }
@@ -47,42 +65,42 @@ export default function Home() {
             id: 1,
             name: 'Café Latte',
             description: "Expresso com leite vaporizado e leve espuma.",
-            price: 100,
+            price: "15,00",
             image: 'op-1-latte.jpg'
         },
         {
             id: 2,
             name: 'Café Gelado',
             description: "Café resfriado com gelo, frequentemente adoçado.",
-            price: 100,
+            price: "18,00",
             image: 'op-2-iced.jpg'
         },
         {
             id: 3,
             name: 'Mocha',
             description: "Expresso com chocolate e leite vaporizado.",
-            price: 100,
+            price: "12,00",
             image: 'op-3-mocha.jpg'
         },
         {
             id: 4,
             name: 'Café Filtrado',
             description: "Preparado com água quente passando pelos grãos.",
-            price: 100,
+            price: "15,00",
             image: 'op-4-filtered.jpg'
         },
         {
             id: 5,
             name: 'Café Preto',
             description: "Café simples, sem leite ou açúcar.",
-            price: 100,
+            price: "10,00",
             image: 'op-5-black.jpg'
         },
         {
             id: 6,
             name: 'Café Batido',
             description: "Café batido com açúcar até uma textura cremosa antes de preparar.",
-            price: 100,
+            price: "16,00",
             image: 'op-6-beaten.jpg'
         }
     ];
@@ -92,49 +110,49 @@ export default function Home() {
             id: 7,
             name: 'Bolo de Sorvete',
             description: "Uma sobremesa em camadas combinando bolo e sorvete.",
-            price: 100,
+            price: "18,00",
             image: 'cmd-6.jpg'
         },
         {
             id: 8,
             name: 'Churros',
             description: "Massa frita, geralmente polvilhada com açúcar.",
-            price: 100,
+            price: "15,00",
             image: 'cmd-7.jpg'
         },
         {
             id: 9,
             name: 'Torta de Morango',
             description: "Uma torta recheada com morangos frescos e doces.",
-            price: 100,
+            price: "12,00",
             image: 'cmd-3.jpg'
         },
         {
             id: 10,
             name: 'Waffles de Chocolate',
             description: "Waffles com infusão de chocolate, servidos quentes.",
-            price: 100,
+            price: "10,00",
             image: 'cmd-4.jpg'
         },
         {
             id: 11,
             name: 'Pudim',
             description: "Uma sobremesa cremosa, com sabor de baunilha ou chocolate.",
-            price: 100,
+            price: "8,00",
             image: 'cmd-2.jpg'
         },
         {
             id: 12,
             name: 'Brownies',
             description: "Quadrados densos de chocolate com uma textura macia.",
-            price: 100,
+            price: "5,00",
             image: 'cmd-1.jpg'
         },
         {
             id: 13,
             name: 'Muffins de Chocolate',
             description: "Muffins macios com sabor intenso de chocolate.",
-            price: 100,
+            price: "5,00",
             image: 'cmd-5.jpg'
         }
     ];
@@ -231,7 +249,7 @@ export default function Home() {
                 </div>
                 <div style={{ height: '20%' }}>
                     <div className="bebas-neue-regular" style={{ fontSize: '24px', textAlign: 'start' }}>{product.name}</div>
-                    <div className="lato-regular" style={{ fontSize: '16px', textAlign: 'start', minHeight: '38px' }}>{product.description}</div>
+                    <div className="lato-regular" style={{ fontSize: '16px', textAlign: 'start', minHeight: '38px', maxHeight: '38px' }}>{product.description}</div>
                     <div className="mt-3 flex flex-wrap gap-2 align-items-center justify-content-between">
                         <div className="lato-black">R${product.price}</div>
                         <div className="buy-button lato-regular">COMPRAR</div>
@@ -323,7 +341,7 @@ export default function Home() {
                     <span style={{ textAlign: 'center' }}>Doces Delícias</span>
                 </div>
             </div>
-            <div style={{ width: '80%' }}>
+            <div className="main-content-container">
                 <div className="shop-container">
                     <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>NOSSOS CAFÉS ESPECIAIS</div>
                     <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
@@ -336,8 +354,8 @@ export default function Home() {
                 <div className="beans-container">
                     <img className="hands-img" src="/images/png/coffee-wave.png" width={550}></img>
                     <div className="content">
-                        <div className="lato-black" style={{ fontSize: '40px' }}>Confira nossos melhores grãos de café, cuidadosamente selecionados para o preparo perfeito.</div>
-                        <div className="lato-bold" style={{ fontSize: '16px' }}>Descubra nossa melhor seleção de grãos de café, cuidadosamente escolhidos e torrados com maestria para realçar os sabores mais ricos.<br></br> Presenteie-se com a melhor experiência de café com nossos grãos premium, perfeitos para todo amante de café.</div>
+                        <div className="lato-black title-text">Confira nossos melhores grãos de café, cuidadosamente selecionados para o preparo perfeito.</div>
+                        <div className="lato-bold small-text" style={{ fontSize: '16px' }}>Descubra nossa melhor seleção de grãos de café, cuidadosamente escolhidos e torrados com maestria para realçar os sabores mais ricos.<br></br> Presenteie-se com a melhor experiência de café com nossos grãos premium, perfeitos para todo amante de café.</div>
                         <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/coffee-and-beans.png" width={350}></img>
@@ -346,23 +364,23 @@ export default function Home() {
                 <div className="reviews-container">
                     <div className="title">
                         <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Junte-se a Nós</div>
-                        <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div>
+                        <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div>
                     </div>
-                    <Carousel value={reviews} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} className="custom-carousel-review" circular
+                    <Carousel value={reviews} numVisible={3} numScroll={3} responsiveOptions={reviewsResponsiveOptions} className="custom-carousel-review" circular
                     itemTemplate={reviewTemplate} />
                 </div>
 
                 <div className="join-container">
                     <img className="hands-img" src="/images/png/border-coffee.png" width={500}></img>
                     <div className="content">
-                        <div className="lato-black" style={{ fontSize: '40px' }}>Registre-se e ganhe 15% de desconto!</div>
-                        <div className="lato-bold" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Inscreva-se na nossa newsletter e seja o primeiro a saber sobre ofertas exclusivas, novos produtos e promoções especiais.<br></br> Não perca a chance de aproveitar 15% de desconto na sua primeira compra!</div>
-                        <div style={{ display: 'flex', width: '70%' }}>
-                            <IconField iconPosition="left" style={{ width: '75%' }}>
+                        <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center' }}>Registre-se e ganhe 15% de desconto!</div>
+                        <div className="lato-bold hide-text-full" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Inscreva-se na nossa newsletter e seja o primeiro a saber sobre ofertas exclusivas, novos produtos e promoções especiais.<br></br><span className="hide-text">Não perca a chance de aproveitar 15% de desconto na sua primeira compra!</span></div>
+                        <div className="email-input-container" style={{ display: 'flex' }}>
+                            <IconField iconPosition="left" className="email-input" style={{ width: '75%' }}>
                                 <InputIcon className="pi pi-envelope w-full" style={{ marginLeft: '5px' }}> </InputIcon>
                                 <InputText className="round-input w-full" style={{ paddingLeft: '38px' }} value={value} onChange={(e) => setValue(e.target.value)} />
                             </IconField>
-                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', width: '25%', marginLeft: '5px' }}>SUBSCRIBE</div>
+                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginLeft: '5px' }}>SUBSCRIBE</div>
                         </div>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/border-coffee.png" width={500}></img>
