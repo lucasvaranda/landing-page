@@ -279,16 +279,16 @@ export default function Home() {
     
     const reviewTemplate = (product) => {
         return (
-            <div className="surface-border border-round m-2 py-5 px-3 h-full flex flex-column justify-content-between review-card shadow-2">
+            <div style={{ width: '90%' }} className="surface-border border-round m-2 py-5 px-3 h-full flex flex-column justify-content-between review-card shadow-2">
                 <div className="mb-3 flex align-items-center" style={{ height: '30%' }}>
                     <img src={`/images/png/${product.image}`} alt={product.name} style={{ width: '70px', height: '70px', objectFit: 'cover', borderRadius: '100%' }} className="shadow-2" />
                     <div style={{ marginLeft: '10px' }}>
                         <div className="lato-bold" style={{ fontSize: '18px', textAlign: 'start' }}>{product.name}</div>
                         <div className="lato-bold" style={{ fontSize: '12px', textAlign: 'start' }}>{product.date}</div>
                     </div>
-                    <div style={{ marginLeft: 'auto', marginBottom: '40px' }}>{renderStars(product.grade)}</div>
+                    <div style={{ marginLeft: 'auto', marginBottom: '40px', display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>{renderStars(product.grade)}</div>
                 </div>
-                <div style={{ height: '70%' }}>{product.description}</div>
+                <div style={{ height: '70%', display: 'flex', justifyContent: 'center' }}><span style={{ width: '98%' }}>{product.description}</span></div>
             </div>
         );
     };
@@ -323,7 +323,7 @@ export default function Home() {
                     <div className="custom-buttom">PEÇA AGORA</div>
                 </div>
             </div>
-            <div className="lato-bold" style={{ width: '60%', display: 'flex', justifyContent: 'space-around', margin: '150px 0px', opacity: '0.7' }}>
+            <div className="lato-bold icons-container" style={{ display: 'flex', justifyContent: 'space-around', margin: '150px 0px', opacity: '0.7' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src="/images/png/coffee-ic.png" width={70}></img>
                     <span style={{ textAlign: 'center' }}>Coado à Perfeição</span>
