@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { InputText } from "primereact/inputtext";
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
@@ -12,12 +12,58 @@ export default function Home() {
     const [likedProducts, setLikedProducts] = useState({});
     const [value, setValue] = useState("");
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.getElementById('navbar-container');
+            const mainScreen = document.getElementById('main-screen');
+            
+            if (mainScreen.scrollTop > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        const mainScreen = document.getElementById('main-screen');
+        mainScreen.addEventListener('scroll', handleScroll);
+
+        // Cleanup
+        return () => {
+            mainScreen.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const toggleLike = (productId) => {
         setLikedProducts((prevLikedProducts) => ({
             ...prevLikedProducts,
             [productId]: !prevLikedProducts[productId],
         }));
     };
+
+    const changeLocation = (e, targetId) => {
+    e.preventDefault();
+    
+    const mainScreen = document.getElementById('main-screen');
+    const targetElement = document.querySelector(targetId);
+    
+    if(targetId == "#image-container") {
+        return mainScreen.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    if (mainScreen && targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top + mainScreen.scrollTop;
+        const offsetPosition = elementPosition - 80;
+
+        // Rola a div 'main-screen' até 10px acima do elemento alvo
+        mainScreen.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+};
 
     const responsiveOptions = [
         {
@@ -296,14 +342,14 @@ export default function Home() {
     return (
         <div id="main-screen" className="w-full h-full flex flex-column align-items-center">
             <div id="navbar-container">
-                <span className="title lato-black">Coffee</span>
-                <ul>
-                    <li className="bebas-neue-regular"><a href="#home">INÍCIO</a></li>
-                    <li className="bebas-neue-regular"><a href="#shop">LOJA</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">GRÃOS</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">AVALIAÇÕES</a></li>
-                    <li className="bebas-neue-regular"><a href="#about">REGISTRE-SE</a></li>
-                    <li className="bebas-neue-regular"><a href="#login">ENTRAR</a></li>
+                <span className="title lato-black"></span>
+                <ul className="bebas-neue-regular">
+                    <li><a onClick={(e) => changeLocation(e, "#image-container")}>INÍCIO</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#shop-container")}>LOJA</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
+                    {/* <li><a href="#login">ENTRAR</a></li> */}
                 </ul>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
             </div>
@@ -342,7 +388,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="main-content-container">
-                <div className="shop-container">
+                <div id="shop-container">
                     <div className="bebas-neue-regular" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>NOSSOS CAFÉS ESPECIAIS</div>
                     <Carousel value={products} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} className="custom-carousel" circular
                     itemTemplate={productTemplate} />
@@ -351,7 +397,7 @@ export default function Home() {
                     itemTemplate={productTemplate} />
                 </div>
 
-                <div className="beans-container">
+                <div id="beans-container">
                     <img className="hands-img" src="/images/png/coffee-wave.png" width={550}></img>
                     <div className="content">
                         <div className="lato-black title-text">Confira nossos melhores grãos de café, cuidadosamente selecionados para o preparo perfeito.</div>
@@ -361,7 +407,7 @@ export default function Home() {
                     <img className="coffee-portion-img" src="/images/png/coffee-and-beans.png" width={350}></img>
                 </div>
                 
-                <div className="reviews-container">
+                <div id="reviews-container">
                     <div className="title">
                         <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Junte-se a Nós</div>
                         <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div>
@@ -370,7 +416,7 @@ export default function Home() {
                     itemTemplate={reviewTemplate} />
                 </div>
 
-                <div className="join-container">
+                <div id="join-container">
                     <img className="hands-img" src="/images/png/border-coffee.png" width={500}></img>
                     <div className="content">
                         <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center' }}>Registre-se e ganhe 15% de desconto!</div>
@@ -388,20 +434,14 @@ export default function Home() {
             </div>
             <div className="footer-container">
                 <img src="/images/png/coffee-beans-logo-light.png" width={120} style={{ height: '120px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
-                <div className="flex" style={{ color: '#FFF', letterSpacing: '1px', gap: '25px' }}>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>INÍCIO</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>FALE CONOSCO</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOBRE NÓS</div>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>LOCALIZAÇÃO</div>
-                </div>
                 <div style={{ color: '#FFF', letterSpacing: '1px' }}>
                     <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOCIAL MEDIA</div>
                     <div className="flex" style={{ gap: '10px' }}>
-                        <div><i className="pi pi-instagram" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
-                        <div><i className="pi pi-facebook" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
-                        <div><i className="pi pi-twitter" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
-                        <div><i className="pi pi-tiktok" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
-                        <div><i className="pi pi-linkedin" style={{ fontSize: '15px', color: '#FFF' }}></i></div>
+                        <div><i className="pi pi-instagram" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
+                        <div><i className="pi pi-facebook" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
+                        <div><i className="pi pi-twitter" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
+                        <div><i className="pi pi-tiktok" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
+                        <div><i className="pi pi-linkedin" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
                     </div>
                 </div>
             </div>
