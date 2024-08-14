@@ -33,6 +33,17 @@ export default function Home() {
         };
     }, []);
 
+    const toggleMenu = () => {
+        const menu = document.querySelector(".menu-lateral");
+        if(menu.classList.contains("expanded-menu")) {
+            menu.classList.add('collapsed-menu');
+            menu.classList.remove('expanded-menu');
+        } else {
+            menu.classList.add('expanded-menu');
+            menu.classList.remove('collapsed-menu');
+        }
+    };
+
     const toggleLike = (productId) => {
         setLikedProducts((prevLikedProducts) => ({
             ...prevLikedProducts,
@@ -341,16 +352,30 @@ export default function Home() {
     
     return (
         <div id="main-screen" className="w-full h-full flex flex-column align-items-center">
+            <div className="menu-lateral">
+                <div className="container">
+                    <ul className="bebas-neue-regular side-menu-list">
+                        <li><a onClick={(e) => changeLocation(e, "#image-container")}>INÍCIO</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#shop-container")}>LOJA</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
+                    </ul>
+                    <div className="close-button">
+                        <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#2b2527' }}></i>
+                    </div>
+                </div>
+            </div>
+            
             <div id="navbar-container">
-                <span className="title lato-black"></span>
-                <ul className="bebas-neue-regular">
+                <ul className="bebas-neue-regular top-menu-list">
                     <li><a onClick={(e) => changeLocation(e, "#image-container")}>INÍCIO</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#shop-container")}>LOJA</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
-                    {/* <li><a href="#login">ENTRAR</a></li> */}
                 </ul>
+                <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#FFF' }}></i>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
             </div>
             <div className="image-container" style={{backgroundImage: 'url("/images/png/home-background-2.jpeg")' }}>
