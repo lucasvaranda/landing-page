@@ -1,5 +1,11 @@
 #login-screen {
-    background: linear-gradient(314deg, #211f22, #3c3041);
+    background-color: #382f2f;
+
+    .ref-button {
+        background-color: #1f1b1b;
+        border-color: #1f1b1b;
+    }
+    
     .main-container {
         background-color: #FFF;
         height: 650px;
@@ -25,47 +31,47 @@
         .login-entrar-button {
             padding: 13px 16px;
             width: 100%;
-            background: #5432af;
-            border-color: #162976;
+            background-color: #4b3e3e;
+            border-color: #251f1f;
             font-weight: 400;
             letter-spacing: 1px;
         }
 
         .login-entrar-button:hover {
-            background: #452797;
-            border-color: #162976;
+            background: #2c2525;
+            border-color: #251f1f;
         }
 
         input:enabled:hover {
-            border-color: #5432af;
+            border-color: #4b3e3e;
         }
 
         input:enabled:focus {
             outline: 0 none;
             outline-offset: 0;
             box-shadow: 0 0 0 0.2rem #c8b9ff;
-            border-color: #5432af;
+            border-color: #4b3e3e;
         }
 
         input:-webkit-autofill,
         input:-webkit-autofill:hover, 
         input:-webkit-autofill:focus, 
         input:-webkit-autofill:active{
-            -webkit-box-shadow: 0 0 0 30px #f3effa inset !important;
+            -webkit-box-shadow: 0 0 0 30px #faf4ef inset !important;
         }
 
         .cicle-buttons-container {
             margin-top: 10px;
 
             .user-register-button {
-                background-color: #9176dc;
-                border-color: #9176dc;
+                background-color: #88605d;
+                border-color: #88605d;
             }
             
             .forgot-password-button {
                 margin-left: 10px;
-                background-color: #ca67e3;
-                border-color: #ca67e3;
+                background-color: #e39467;
+                border-color: #e39467;
             }
         }
 
@@ -98,6 +104,12 @@
     @media only screen and (min-width: 700px) and (max-width: 1000px) {
         .main-container {
             width: 90% !important;
+            .top-coffe-image {
+                top: -20px !important;
+            }
+            .bottom-coffe-image {
+                bottom: -20px !important;
+            }
         }
     }
 
@@ -114,27 +126,44 @@
             .image-container {
                 height: 30% !important;
             }
+
+            .top-coffe-image {
+                display: none;
+            }
+            .bottom-coffe-image {
+                display: none;
+            }
         }
     }
     
 }
 .forgot-password-tooltip {
     .p-tooltip-text {
-        background-color: #ca67e3 !important; /* Escolha sua cor de fundo desejada */
+        background-color: #e39467 !important; /* Escolha sua cor de fundo desejada */
         color: white !important; /* Cor do texto do tooltip */
     }
     /* Arrow color */
     .p-tooltip-arrow {
-        border-bottom-color: #ca67e3 !important; /* Ajuste para corresponder à cor de fundo */
+        border-bottom-color: #e39467 !important; /* Ajuste para corresponder à cor de fundo */
     }
 }
 .user-register-tooltip {
     .p-tooltip-text {
-        background-color: #9176dc !important; /* Escolha sua cor de fundo desejada */
+        background-color: #88605d !important; /* Escolha sua cor de fundo desejada */
         color: white !important; /* Cor do texto do tooltip */
     }
     /* Arrow color */
     .p-tooltip-arrow {
-        border-bottom-color: #9176dc !important; /* Ajuste para corresponder à cor de fundo */
+        border-bottom-color: #88605d !important; /* Ajuste para corresponder à cor de fundo */
+    }
+}
+.ref-tooltip {
+    .p-tooltip-text {
+        background-color: #1f1b1b !important; /* Escolha sua cor de fundo desejada */
+        color: white !important; /* Cor do texto do tooltip */
+    }
+    /* Arrow color */
+    .p-tooltip-arrow {
+        border-top-color: #1f1b1b !important; /* Ajuste para corresponder à cor de fundo */
     }
 }

@@ -13,6 +13,12 @@ export default function Home() {
     const [likedProducts, setLikedProducts] = useState({});
     const [value, setValue] = useState("");
     const [visible, setVisible] = useState(false);
+    
+    let navigate = useNavigate();
+    const routeChange = () =>{
+        let path = `../login`; 
+        navigate(path, { replace: true })
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -374,6 +380,7 @@ export default function Home() {
                         <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
                         <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
                         <li><a onClick={(e) => { toggleMenu(); setVisible(true);}}>REFERÊNCIA</a></li>
+                        <li><a onClick={(e) => routeChange()}>LOGIN</a></li>
                     </ul>
                     <div className="close-button">
                         <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#2b2527' }}></i>
@@ -389,6 +396,7 @@ export default function Home() {
                     <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
                     <li><a onClick={(e) => setVisible(true)}>REFERÊNCIA</a></li>
+                    <li><a onClick={(e) => routeChange()}>LOGIN</a></li>
                 </ul>
                 <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#FFF' }}></i>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>

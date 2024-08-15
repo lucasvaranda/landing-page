@@ -3,10 +3,12 @@ import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { useNavigate } from "react-router-dom";
+import { Dialog } from 'primereact/dialog';
 import './index.scss';
 
 export default function LoginScreen() {
     const [value, setValue] = useState('');
+    const [visible, setVisible] = useState(false);
 
     let navigate = useNavigate();
     const routeChange = () =>{
@@ -16,6 +18,20 @@ export default function LoginScreen() {
 
     return (
         <div id="login-screen" className="w-full h-full flex flex-column align-items-center justify-content-center">
+            <div style={{ position: 'absolute', bottom: "15px" }}>
+                <Button icon="pi pi-info-circle" onClick={() => setVisible(true)} className="ref-button" rounded severity="secondary" aria-label="Search" tooltip="Referência" tooltipOptions={{ position: 'top', className: 'ref-tooltip' }} />
+            </div>
+
+            <Dialog header="Referência" visible={visible} onHide={() => {if (!visible) return; setVisible(false); }}
+                style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
+                <p className="m-0" style={{ color: '#2b2527' }}>
+                Essa é uma tela de login sem fins comerciais, desenvolvida como parte de um estudo de reprodução de layout. A inspiração para o design foi tirada de um modelo disponível no <a href="https://www.freepik.com/free-vector/log-landing-page-with-gradient-geometric-shapes_5414245.htm#query=login%20page%20design&position=1&from_view=keyword&track=ais_user&uuid=af38cc5a-0545-450e-ba29-a836e51b8c8a" target="_blank" style={{ textDecoration: 'none', color: '#2b2527', fontWeight: 'bolder' }}>Freepik</a>.<br></br><br></br>
+                    O objetivo do projeto não era criar uma réplica exata, mas sim capturar a essência do layout original, mantendo uma certa liberdade criativa para adaptações e melhorias.<br></br><br></br>
+                    O desenvolvimento foi realizado utilizando React.js e SASS, com o auxílio do UI Suite PrimeReact. No entanto, a maior parte dos estilos foi elaborada manualmente com HTML e CSS básicos.
+                </p>
+                <img src="/images/png/ref-login.jpg" width={"100%"} style={{ marginTop: '20px' }}></img>
+            </Dialog>
+            
             <div className="main-container w-6 flex border-round-sm">
                 <div className="w-6 h-full login-content">
                     <div className="flex flex-column align-items-center justify-content-center h-full">
@@ -55,13 +71,12 @@ export default function LoginScreen() {
                         </div>
                     </div>
                 </div>
-                <div className="w-6 h-full flex align-items-center justify-content-center login-content image-container" style={{ backgroundColor: '#ede4f7'}}>
+                <div className="w-6 h-full flex align-items-center justify-content-center login-content image-container" style={{ backgroundColor: '#f0e8e1', position: 'relative', overflow: 'hidden' }}>
                     <div style={{ position: 'relative' }}>
-                        <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ zIndex: 2, position: 'relative' }} />
-                        <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ position: 'absolute', bottom: '-1px', left: '0px', opacity: '0.4' }} />
-                        <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ position: 'absolute', bottom: '-6px', left: '0px', opacity: '0.2' }} />
-                        <img src="/images/png/logo_default.png" alt="unio-logo" width="200" style={{ position: 'absolute', bottom: '-11px', left: '0px', opacity: '0.1' }} />
+                        <img src="/images/png/coffee-beans-logo-light.png" alt="unio-logo" width="200" style={{ zIndex: 2, position: 'relative', filter: "invert(6%) sepia(6%) saturate(3466%) hue-rotate(330deg) brightness(93%) contrast(83%)" }} />
                     </div>
+                    <img src="/images/png/coffee-wave.png" className="top-coffe-image" width="100%" style={{ zIndex: 2, position: 'absolute', opacity: '0.9', top: '-70px', transform: 'rotate(180deg)' }} />
+                    <img src="/images/png/coffee-wave.png" className="bottom-coffe-image" width="100%" style={{ zIndex: 2, position: 'absolute', opacity: '0.9', bottom: '-70px' }} />
                 </div>
             </div>
         </div>
