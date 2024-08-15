@@ -14,12 +14,12 @@ const router = createBrowserRouter([
     element: <LoginScreen />
   },
   {
-    path: '/home',
+    path: '/',
     element: <Home />
   },
   {
     path: '*',
-    element: <Navigate to="/home" replace />
+    element: <Navigate to="/" replace />
   }
 ]);
 
