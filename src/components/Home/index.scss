@@ -215,13 +215,24 @@
     }
 
     .buy-button {
+        cursor: pointer;
         text-align: center;
         background-color: #382f2f;
-        color: #FFF;
+        color: #f0e8e1;
         padding: 13px 25px;
         font-size: 12px;
         border-radius: 10px;
         letter-spacing: 1px;
+    }
+
+    .buy-button:hover {
+        background-color: #2b2424;
+    }
+    
+    .buy-button:active {
+        color: #FFF;
+        background-color: #4b3f3f;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     #shop-container {
@@ -286,7 +297,6 @@
     }
 
     #reviews-container {
-        position: relative;
         background-color: #f0e8e1;
         height: 520px;
         .title {
@@ -295,14 +305,22 @@
             width: 100%;
             align-items: center;
         }
+        
+        .p-carousel-container {
+            position: relative;
+        }
 
         .p-carousel-prev {
+            top: auto;
+            bottom: auto;
             left: 0px;
             svg {
                 margin-left: -2px;
             }
         }
         .p-carousel-next {
+            top: auto;
+            bottom: auto;
             right: 0px;
             svg {
                 margin-right: -2px;
@@ -512,7 +530,7 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        color: #d5c5a4;
+        color: #f0e8e1;
         background-color: #382f2f;
     }
     .p-carousel-prev {
@@ -530,12 +548,22 @@
         }
     }
     .p-carousel-prev:hover {
-        background-color: #1f1b1b !important;
+        background-color: #2b2424 !important;
         // background-image: linear-gradient(to right, #2b2525 , #2b2525);
     }
     .p-carousel-next:hover {
-        background-color: #1f1b1b !important;
+        background-color: #2b2424 !important;
         // background-image: linear-gradient(to left, #2b2525 , #2b2525);
+    }
+    .p-carousel-prev:active {
+        color: #FFF !important;
+        background-color: #4b3f3f !important;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .p-carousel-next:active {
+        color: #FFF !important;
+        background-color: #4b3f3f !important;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
     #shop-container {
         position: relative;
@@ -589,7 +617,7 @@
     
         .custom-carousel-review {
             .p-carousel-container {
-                height: 355px;
+                height: 305px;
             }
         }
     }

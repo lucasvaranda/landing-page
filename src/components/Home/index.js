@@ -6,11 +6,13 @@ import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { useNavigate } from "react-router-dom";
 import { Carousel } from 'primereact/carousel';
+import { Dialog } from 'primereact/dialog';
 import './index.scss';
 
 export default function Home() {
     const [likedProducts, setLikedProducts] = useState({});
     const [value, setValue] = useState("");
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -352,6 +354,17 @@ export default function Home() {
     
     return (
         <div id="main-screen" className="w-full h-full flex flex-column align-items-center">
+            <Dialog header="Referência" visible={visible} onHide={() => {if (!visible) return; setVisible(false); }}
+                style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
+                <p className="m-0" style={{ color: '#2b2527' }}>
+                    Essa é uma landing-page sem fins comerciais, desenvolvida como parte de um estudo de reprodução de layout. A inspiração para o design foi tirada do trabalho do UI/UX designer <a href="https://www.behance.net/nirmalkumar_uidesign" target="_blank" style={{ textDecoration: 'none', color: '#2b2527', fontWeight: 'bolder' }}>Nirmal Kumar</a>.<br></br><br></br>
+                    O objetivo do projeto não era criar uma réplica exata, mas sim capturar a essência do layout original, mantendo uma certa liberdade criativa para adaptações e melhorias.<br></br><br></br>
+                    O desenvolvimento foi realizado utilizando React.js e SASS, com o auxílio do UI Suite PrimeReact. No entanto, a maior parte dos estilos foi elaborada manualmente com HTML e CSS básicos.
+                </p>
+                <img src="/images/png/ref-1.png" width={"100%"} style={{ marginTop: '20px' }}></img>
+                <img src="/images/png/ref-2.png" width={"100%"} style={{ marginTop: '20px' }}></img>
+                <img src="/images/png/ref-3.png" width={"100%"} style={{ marginTop: '20px' }}></img>
+            </Dialog>
             <div className="menu-lateral">
                 <div className="container">
                     <ul className="bebas-neue-regular side-menu-list">
@@ -360,6 +373,7 @@ export default function Home() {
                         <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
                         <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
                         <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
+                        <li><a onClick={(e) => { toggleMenu(); setVisible(true);}}>REFERÊNCIA</a></li>
                     </ul>
                     <div className="close-button">
                         <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#2b2527' }}></i>
@@ -374,6 +388,7 @@ export default function Home() {
                     <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
                     <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
+                    <li><a onClick={(e) => setVisible(true)}>REFERÊNCIA</a></li>
                 </ul>
                 <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#FFF' }}></i>
                 <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
@@ -391,7 +406,7 @@ export default function Home() {
                     <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '30px', marginBottom: '30px', textAlign: 'center' }}>Servimos o café mais rico<br></br>  da cidade!</div>
 
                     
-                    <div className="custom-buttom">PEÇA AGORA</div>
+                    <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>PEÇA AGORA</div>
                 </div>
             </div>
             <div className="lato-bold icons-container" style={{ display: 'flex', justifyContent: 'space-around', margin: '150px 0px', opacity: '0.7' }}>
