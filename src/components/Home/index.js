@@ -265,7 +265,7 @@ export default function Home() {
             name: 'Eduardo Lima',
             description: "A torta de morango tem uma crosta crocante e um recheio bem equilibrado. Só gostaria que tivesse um pouco mais de morangos.",
             grade: 4,
-            date: '1 week ago',
+            date: 'Há uma semana',
             image: 'pic-3.jpg'
         },
         {
