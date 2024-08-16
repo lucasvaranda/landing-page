@@ -18,9 +18,9 @@ export default function LoginScreen() {
 
     return (
         <div id="login-screen" className="w-full h-full flex flex-column align-items-center justify-content-center">
-            <div style={{ position: 'absolute', bottom: "15px" }}>
+            {/* <div style={{ position: 'absolute', bottom: "15px" }}>
                 <Button icon="pi pi-info-circle" onClick={() => setVisible(true)} className="ref-button" rounded severity="secondary" aria-label="Search" tooltip="Referência" tooltipOptions={{ position: 'top', className: 'ref-tooltip' }} />
-            </div>
+            </div> */}
 
             <Dialog header="Referência" visible={visible} onHide={() => {if (!visible) return; setVisible(false); }}
                 style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
@@ -65,8 +65,8 @@ export default function LoginScreen() {
                                 className="login-entrar-button roboto-condensed-font"
                             />
                             <div className="flex flex-row w-full align-items-center justify-content-center cicle-buttons-container">
-                                <Button icon="pi pi-user-plus" className="user-register-button" rounded severity="info" aria-label="User" tooltip="Cadastrar Usuário" tooltipOptions={{ position: 'bottom', className: 'user-register-tooltip' }} />
-                                <Button icon="pi pi-key" className="forgot-password-button" rounded severity="secondary" aria-label="Search" tooltip="Recuperar Senha" tooltipOptions={{ position: 'bottom', className: 'forgot-password-tooltip' }} />
+                                <Button icon="pi pi-info-circle" onClick={() => setVisible(true)} className="user-register-button" rounded severity="info" aria-label="User" tooltip="Referência" tooltipOptions={{ position: 'bottom', className: 'user-register-tooltip' }} />
+                                <Button icon="pi pi-user-plus" className="forgot-password-button" rounded severity="secondary" aria-label="Search" tooltip="Cadastrar Usuário" tooltipOptions={{ position: 'bottom', className: 'forgot-password-tooltip' }} />
                             </div>
                         </div>
                     </div>

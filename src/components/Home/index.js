@@ -23,33 +23,41 @@ export default function Home() {
     useEffect(() => {
         let debounceTimer;
         let lastScrollTop = 0;
-    
+
         const handleScroll = () => {
             const navbar = document.getElementById('navbar-container');
             const currentScrollTop = window.scrollY;
-    
+
             clearTimeout(debounceTimer);
-    
-            if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+
+            if (currentScrollTop > lastScrollTop && currentScrollTop > 0) {
                 navbar.classList.add('scrolled');
                 navbar.classList.remove('text-hidden');
-            } else if (currentScrollTop < lastScrollTop) {
+            } else if (currentScrollTop < lastScrollTop && currentScrollTop > 0) {
                 navbar.classList.remove('scrolled');
                 navbar.classList.add('text-hidden');
+            } else {
+                navbar.classList.remove('text-hidden');
+                if (currentScrollTop > 0) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             }
-    
+
             debounceTimer = setTimeout(() => {
                 if (currentScrollTop > 100) {
                     navbar.classList.remove('scrolled');
                     navbar.classList.add('text-hidden');
                 }
             }, 3000);
-    
+
             lastScrollTop = currentScrollTop;
         };
-    
+
         window.addEventListener('scroll', handleScroll);
-    
+
+        // Cleanup
         return () => {
             window.removeEventListener('scroll', handleScroll);
             clearTimeout(debounceTimer);
