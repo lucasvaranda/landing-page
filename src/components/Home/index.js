@@ -23,23 +23,20 @@ export default function Home() {
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.getElementById('navbar-container');
-            const mainScreen = document.getElementById('main-screen');
             
-            if (mainScreen.scrollTop > 0) {
+            if (window.scrollY > 0) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
         };
-
-        const mainScreen = document.getElementById('main-screen');
-        mainScreen.addEventListener('scroll', handleScroll);
-
-        // Cleanup
+    
+        window.addEventListener('scroll', handleScroll);
+    
         return () => {
-            mainScreen.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, []);    
 
     const toggleMenu = () => {
         const menu = document.querySelector(".menu-lateral");
@@ -60,29 +57,27 @@ export default function Home() {
     };
 
     const changeLocation = (e, targetId) => {
-    e.preventDefault();
-    
-    const mainScreen = document.getElementById('main-screen');
-    const targetElement = document.querySelector(targetId);
-    
-    if(targetId == "#image-container") {
-        return mainScreen.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
+        e.preventDefault();
+        const targetElement = document.querySelector(targetId);
+        
+        if(targetId == "#image-container") {
+            return window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
-    if (mainScreen && targetElement) {
-        const elementPosition = targetElement.getBoundingClientRect().top + mainScreen.scrollTop;
-        const offsetPosition = elementPosition - 80;
 
-        // Rola a div 'main-screen' até 10px acima do elemento alvo
-        mainScreen.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    }
-};
+        if (targetElement) {
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - 60;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     const responsiveOptions = [
         {
