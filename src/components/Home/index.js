@@ -249,7 +249,7 @@ export default function Home() {
             name: 'Alice Martins',
             description: "O cappuccino aqui é incrível! Cremoso, com uma espuma leve e saborosa. Perfeito para começar o dia.",
             grade: 5,
-            date: '2 days ago',
+            date: 'Há 2 dias',
             image: 'pic-5.jpg'
         },
         {
@@ -257,7 +257,7 @@ export default function Home() {
             name: 'Lucas Varanda',
             description: "O Mocha é maravilhoso! O sabor do chocolate combina perfeitamente com o café, e é super cremoso. É aquela bebida aconchegante que você não pode deixar de provar!",
             grade: 5,
-            date: '5 days ago',
+            date: 'Há 5 dias',
             image: 'pic-1.jpg'
         },
         {
@@ -273,7 +273,7 @@ export default function Home() {
             name: 'Beatriz Santos',
             description: "Os churros recheados com doce de leite são maravilhosos! Crocantes por fora e macios por dentro, com a quantidade certa de recheio.",
             grade: 4,
-            date: '3 days ago',
+            date: 'Há 3 dias',
             image: 'pic-6.jpg'
         },
         {
@@ -281,7 +281,7 @@ export default function Home() {
             name: 'Fernanda Pereira',
             description: "O pudim é muito bom, com uma textura cremosa e um delicioso sabor de baunilha. Um clássico bem executado.",
             grade: 5,
-            date: '4 days ago',
+            date: 'Há 4 dias',
             image: 'pic-7.jpg'
         },
         {
@@ -289,7 +289,7 @@ export default function Home() {
             name: 'Gabriel Souza',
             description: "Os brownies têm um sabor intenso de chocolate e uma textura densa que derrete na boca. Ótima combinação com um café forte.",
             grade: 5,
-            date: '6 days ago',
+            date: 'Há 6 dias',
             image: 'pic-2.jpg'
         },
         {
@@ -297,7 +297,7 @@ export default function Home() {
             name: 'Helena Costa',
             description: "Os muffins de chocolate são macios e muito saborosos, com pedaços de chocolate em cada mordida.",
             grade: 5,
-            date: '1 week ago',
+            date: 'Há 2 semanas',
             image: 'pic-8.jpg'
         },
         {
@@ -305,7 +305,7 @@ export default function Home() {
             name: 'Mariana Ribeiro',
             description: "O expresso é simplesmente perfeito! Forte, encorpado e com um aroma rico que te desperta instantaneamente. Meu café favorito todas as manhãs.",
             grade: 5,
-            date: '2 days ago',
+            date: 'Há 2 dias',
             image: 'pic-9.jpg'
         },
         {
@@ -313,7 +313,7 @@ export default function Home() {
             name: 'Carlos Silva',
             description: "Os waffles de chocolate são sensacionais! O chocolate derrete na boca e os waffles têm uma leve crocância. Altamente recomendado!",
             grade: 4,
-            date: '3 days ago',
+            date: 'Há 3 dias',
             image: 'pic-4.jpg'
         }
     ];    
@@ -495,7 +495,7 @@ export default function Home() {
                                 <InputIcon className="pi pi-envelope w-full" style={{ marginLeft: '5px' }}> </InputIcon>
                                 <InputText className="round-input w-full" style={{ paddingLeft: '38px' }} value={value} onChange={(e) => setValue(e.target.value)} />
                             </IconField>
-                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginLeft: '5px' }}>SUBSCRIBE</div>
+                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginLeft: '5px' }}>REGISTRAR-SE</div>
                         </div>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/border-coffee.png" width={500}></img>
