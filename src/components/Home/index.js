@@ -504,7 +504,7 @@ export default function Home() {
             <div className="footer-container">
                 <img src="/images/png/coffee-beans-logo-light.png" width={120} style={{ height: '120px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
                 <div style={{ color: '#FFF', letterSpacing: '1px' }}>
-                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>SOCIAL MEDIA</div>
+                    <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>REDES SOCIAIS</div>
                     <div className="flex" style={{ gap: '10px' }}>
                         <div><i className="pi pi-instagram" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
                         <div><i className="pi pi-facebook" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
