@@ -8,7 +8,7 @@
     
     .main-container {
         background-color: #FFF;
-        height: 85vh;
+        height: 650px;
         box-shadow: rgb(0 0 0 / 47%) 6px 6px 8px;
         overflow: hidden;
         
@@ -115,7 +115,8 @@
 
     @media only screen and (max-width: 700px) {
         .main-container {
-            height: 75vh;
+            height: 700px;
+            min-height: 700px;
             width: 90% !important;
             flex-direction: column-reverse;
             .login-content {
