@@ -21,22 +21,40 @@ export default function Home() {
     }
 
     useEffect(() => {
+        let debounceTimer;
+        let lastScrollTop = 0;
+    
         const handleScroll = () => {
             const navbar = document.getElementById('navbar-container');
-            
-            if (window.scrollY > 0) {
+            const currentScrollTop = window.scrollY;
+    
+            clearTimeout(debounceTimer);
+    
+            if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
                 navbar.classList.add('scrolled');
-            } else {
+                navbar.classList.remove('text-hidden');
+            } else if (currentScrollTop < lastScrollTop) {
                 navbar.classList.remove('scrolled');
+                navbar.classList.add('text-hidden');
             }
+    
+            debounceTimer = setTimeout(() => {
+                if (currentScrollTop > 100) {
+                    navbar.classList.remove('scrolled');
+                    navbar.classList.add('text-hidden');
+                }
+            }, 3000);
+    
+            lastScrollTop = currentScrollTop;
         };
     
         window.addEventListener('scroll', handleScroll);
     
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            clearTimeout(debounceTimer);
         };
-    }, []);    
+    }, []);
 
     const toggleMenu = () => {
         const menu = document.querySelector(".menu-lateral");
@@ -393,8 +411,8 @@ export default function Home() {
                     <li><a onClick={(e) => setVisible(true)}>REFERÊNCIA</a></li>
                     <li><a onClick={(e) => routeChange()}>LOGIN</a></li>
                 </ul>
-                <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#FFF' }}></i>
-                <i className="pi pi-search" style={{ fontSize: '24px', color: '#FFF' }}></i>
+                <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '18px', color: '#FFF' }}></i>
+                <i className="pi pi-search search-button" style={{ fontSize: '22px', color: '#FFF' }}></i>
             </div>
             <div className="image-container" style={{backgroundImage: 'url("/images/png/home-background-2.jpeg")' }}>
                 <div style={{ width: '60%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

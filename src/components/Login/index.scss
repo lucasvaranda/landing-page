@@ -8,7 +8,7 @@
     
     .main-container {
         background-color: #FFF;
-        height: 650px;
+        height: 85vh;
         box-shadow: rgb(0 0 0 / 47%) 6px 6px 8px;
         overflow: hidden;
         
@@ -115,7 +115,7 @@
 
     @media only screen and (max-width: 700px) {
         .main-container {
-            height: 780px;
+            height: 75vh;
             width: 90% !important;
             flex-direction: column-reverse;
             .login-content {
@@ -132,6 +132,14 @@
             }
             .bottom-coffe-image {
                 display: none;
+            }
+
+            .login-title-1 {
+                font-size: 50px;
+            }
+            .login-title-2 {
+                font-size: 55px;
+                line-height: 50px;
             }
         }
     }

@@ -134,7 +134,7 @@
         a {
             cursor: pointer;
             color: #FFF;
-            font-size: 25px;
+            font-size: 22px;
             display: block;
             position: relative;
             padding: 15px 0px 10px 0px;
@@ -173,6 +173,9 @@
     }
 
     #navbar-container {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
         z-index: 1000;
         display: flex;
         align-items: center;
@@ -200,6 +203,12 @@
         background-color: #221c1e; /* ou qualquer cor que você prefira */
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 5px 9px #0e0b0c88;
+    }
+
+    #navbar-container.text-hidden {
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
     }
     
     .order-now-button {
@@ -454,6 +463,10 @@
 
             .menu-button {
                 display: block;
+            }
+
+            .search-button {
+                font-size: 18px !important;
             }
         }
         
