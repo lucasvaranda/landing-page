@@ -22,7 +22,7 @@ body {
         flex-direction: column;
         background-size: cover;
         background-position: 30% 70%;
-        background-color: #c0dcf0;
+        background-color: #b3c9ef;
         background-blend-mode: multiply;
     }
 
@@ -100,7 +100,8 @@ body {
         color: #FFF;
         padding: 20px 40px;
         font-family: "Lato", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
+        text-shadow: rgb(114 169 251 / 65%) 0px 0px 10px;
         font-style: normal;
         letter-spacing: 2px;
         cursor: pointer;
@@ -204,7 +205,7 @@ body {
     }    
 
     #navbar-container.scrolled {
-        background-color: #221c1e; /* ou qualquer cor que você prefira */
+        background-color: #1c1f22; /* ou qualquer cor que você prefira */
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 5px 9px #0e0b0c88;
     }
@@ -298,7 +299,7 @@ body {
 
         .content {
             margin-left: -90px;
-            width: 50%;
+            width: 60%;
             height: 500px;
             display: flex;
             justify-content: center;
@@ -306,12 +307,13 @@ body {
             flex-direction: column;
             .title-text {
                 font-size: 40px;
+                margin-bottom: 30px;
             }
         }
     }
 
     #reviews-container {
-        background-color: #f0e8e1;
+        background-color: #FFF;
         height: 520px;
         .title {
             display: flex;

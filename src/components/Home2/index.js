@@ -425,13 +425,13 @@ export default function Home2() {
                 <div style={{ width: '68%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     {/* <img src="/images/png/coffee-beans-logo-light.png" style={{ width: '200px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img> */}
                     <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', textAlign: "center" }}>Juntos por <br></br>uma Cidade Melhor</div>
-                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '95px', textAlign: 'center', letterSpacing: '8px' }}>PEDRO VARANDA</div>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', textShadow: "rgb(114 169 251 / 84%) 0px 0px 15px", margin: "15px 0px" }}>PEDRO VARANDA</div>
                     <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
-                        <img src="/images/png/eleicoes/vote-icon.png" style={{ width: '60px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)', margin: '0px 15px' }} ></img>
+                        <img src="/images/png/eleicoes/vote-icon.png" style={{ width: '70px', filter: 'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)', margin: '0px 15px' }} ></img>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
                     </div>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '80px', marginBottom: '30px', textAlign: 'center' }}>20700</div>
+                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', textShadow: "rgb(114 169 251 / 84%) 0px 0px 15px", fontWeight: "600", letterSpacing: '18px' }}>20700</div>
 
                     
                     <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>SOBRE O CANDIDATO</div>
@@ -457,9 +457,10 @@ export default function Home2() {
             </div>
             <div className="main-content-container">
                 <div id="shop-container">
-                    <div className="lato-black title-text" style={{ fontSize: '30px', width: '100%', textAlign: 'center' }}>HISTÓRIA</div>
+                    <div className="lato-black title-text" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>HISTÓRIA</div>
+                    {/* <div className="whisper-regular" style={{ fontSize: '30px', width: '100%', textAlign: 'center' }}>História</div> */}
                     <div style={{ flexWrap: "wrap", display: "flex", alignItems: "center" }}>
-                        <div className="lato-bold" style={{ width: "70%", fontSize: "20px", padding: "0px 20px", marginBottom: "50px", fontWeight: "500", textShadow: "#38571c7d 0px 1px 1px" }}>
+                        <div className="lato-bold" style={{ width: "70%", fontSize: "20px", padding: "0px 20px", marginBottom: "50px" }}>
                             Há muitos anos, Pedro chegou a Santa Isabel em busca de novas oportunidades. Aqui, ele encontrou um lugar acolhedor onde decidiu se estabelecer e construir sua vida. Com o tempo, formou sua família e criou raízes profundas na cidade.<br></br><br></br>Pedro sempre esteve presente, participando ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando para o seu crescimento e prosperidade o seu crescimento e prosperidade.<br></br>Pedro  ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando para o seu crescimento e prosperidade.<br></br><br></br>Pedro sempre esteve presente, participando ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando.
                         </div>
                         <div style={{ width: "25%", display: "flex", justifyContent: "flex-end" }}>
@@ -472,8 +473,8 @@ export default function Home2() {
                 <div id="beans-container">
                     <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                     <div className="content">
-                        <div className="lato-black title-text">Confira nossos melhores grãos de café, cuidadosamente selecionados para o preparo perfeito.</div>
-                        <div className="lato-bold small-text" style={{ fontSize: '16px' }}>Descubra nossa melhor seleção de grãos de café, cuidadosamente escolhidos e torrados com maestria para realçar os sabores mais ricos.<br></br> Presenteie-se com a melhor experiência de café com nossos grãos premium, perfeitos para todo amante de café.</div>
+                        <div className="lato-black title-text">Seu voto faz a diferença com Pedro Varanda!</div>
+                        <div className="lato-bold small-text" style={{ fontSize: '18px' }}>Pretendo focar em áreas essenciais como turismo, meio ambiente, estradas rurais, saúde, educação, cultura, esporte e lazer. Quero promover o desenvolvimento sustentável, melhorar a infraestrutura, e garantir que cada cidadão tenha acesso a serviços de qualidade. Juntos, podemos transformar nossa cidade em um lugar melhor para viver e crescer.<br></br><br></br> Com seu voto, faremos a diferença e construíremos um futuro mais promissor para todos.</div>
                         {/* <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div> */}
                     </div>
                     <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
@@ -481,11 +482,9 @@ export default function Home2() {
                 
                 <div id="reviews-container">
                     <div className="title">
-                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Junte-se a Nós</div>
-                        <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div>
+                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Propostas</div>
+                        {/* <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div> */}
                     </div>
-                    <Carousel value={reviews} numVisible={3} numScroll={3} responsiveOptions={reviewsResponsiveOptions} className="custom-carousel-review" circular
-                    itemTemplate={reviewTemplate} />
                 </div>
 
                 <div id="join-container">
