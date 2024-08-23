@@ -456,6 +456,15 @@ export default function Home2() {
                 </div>
             </div>
             <div className="main-content-container">
+                <div id="beans-container">
+                    <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
+                    <div className="content">
+                        <div className="lato-black title-text">Seu voto faz a diferença com Pedro Varanda!</div>
+                        <div className="lato-bold small-text" style={{ fontSize: '18px' }}>Pretendo focar em áreas essenciais como turismo, meio ambiente, estradas rurais, saúde, educação, cultura, esporte e lazer. Quero promover o desenvolvimento sustentável, melhorar a infraestrutura, e garantir que cada cidadão tenha acesso a serviços de qualidade. Juntos, podemos transformar nossa cidade em um lugar melhor para viver e crescer.<br></br><br></br> Com seu voto, faremos a diferença e construíremos um futuro mais promissor para todos.</div>
+                        {/* <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div> */}
+                    </div>
+                    <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
+                </div>
                 <div id="shop-container">
                     <div className="lato-black title-text" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>HISTÓRIA</div>
                     {/* <div className="whisper-regular" style={{ fontSize: '30px', width: '100%', textAlign: 'center' }}>História</div> */}
@@ -470,40 +479,71 @@ export default function Home2() {
                     <img src="/images/png/eleicoes/Logo-podemos.png" style={{ position: "absolute", bottom: "40px", left: "50px" }} width={200}></img>
                 </div>
 
-                <div id="beans-container">
+                <div id="join-container">
                     <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                     <div className="content">
-                        <div className="lato-black title-text">Seu voto faz a diferença com Pedro Varanda!</div>
-                        <div className="lato-bold small-text" style={{ fontSize: '18px' }}>Pretendo focar em áreas essenciais como turismo, meio ambiente, estradas rurais, saúde, educação, cultura, esporte e lazer. Quero promover o desenvolvimento sustentável, melhorar a infraestrutura, e garantir que cada cidadão tenha acesso a serviços de qualidade. Juntos, podemos transformar nossa cidade em um lugar melhor para viver e crescer.<br></br><br></br> Com seu voto, faremos a diferença e construíremos um futuro mais promissor para todos.</div>
-                        {/* <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div> */}
+                        <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center' }}>PROPOSTAS</div>
+                        <div className="lato-bold hide-text-full propostas-list" style={{ fontSize: '16px', margin: '10px 0px 20px 0px', display: "flex" }}>
+                            <ul>
+                                <li>Melhoria na Infraestrutura das Estradas Rurais<span>Investir na pavimentação e manutenção das estradas rurais para facilitar o escoamento da produção agrícola e melhorar a mobilidade dos moradores</span></li>
+                                <li>Incentivo ao Turismo Local<span>Desenvolver projetos que valorizem os pontos turísticos da cidade, promovendo eventos culturais e melhorando a infraestrutura turística</span></li>
+                                <li>Fortalecimento da Educação Básica<span>Implementar programas de qualificação para professores, ampliar o acesso a materiais didáticos e melhorar a estrutura das escolas</span></li>
+                                <li>Ampliação dos Serviços de Saúde<span>Aumentar o número de unidades de saúde, contratar mais profissionais e melhorar o atendimento, garantindo acesso rápido e de qualidade</span></li>
+                                <li>Apoio ao Desenvolvimento Sustentável<span>Promover iniciativas que incentivem a preservação do meio ambiente, como programas de reflorestamento e uso de energias renováveis</span></li>
+                            </ul>
+                            <ul>
+                                <li>Valorização da Cultura e Tradições Locais<span>Apoiar eventos culturais, festivais e feiras que celebrem as tradições e a história da cidade, fortalecendo a identidade local</span></li>
+                                <li>Fomento ao Esporte e Lazer Comunitário<span>Construir e revitalizar espaços esportivos e de lazer, incentivando a prática de atividades físicas e promovendo a saúde da população</span></li>
+                                <li>Criação de Programas de Reciclagem<span>Estabelecer um sistema eficiente de coleta seletiva e reciclagem, promovendo a conscientização ambiental e a redução de resíduos</span></li>
+                                <li>Transparência e Participação Popular<span>Implementar canais de comunicação direta com a população, garantindo transparência nas decisões e maior participação nos processos políticos</span></li>
+                                <li>Investimento em Segurança Pública<span>Reforçar a segurança pública com o aumento do efetivo policial, instalação de câmeras de vigilância e parcerias com a comunidade para a prevenção da criminalidade</span></li>
+                            </ul>
+                        </div>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                 </div>
                 
                 <div id="reviews-container">
                     <div className="title">
-                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Propostas</div>
+                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Compartilhe!</div>
                         {/* <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div> */}
+                        <div className="lato-bold" style={{ width: "100%", display: "flex", justifyContent: "center", marginTop: "10px" }}>
+                            <span style={{ width: "50%", textAlign: "center" }}>
+                                Sua participação faz toda a diferença! Curta, compartilhe e comente nossas<br></br> publicações para nos ajudar a alcançar mais pessoas. Cada curtida, cada compartilhamento, é um passo a mais para fortalecer nossa mensagem e mostrar que juntos podemos transformar nossa cidade!
+                            </span>
+                        </div>
+                        <div style={{ display: "flex", width: "100%", justifyContent: "space-around", padding: "0px 50px", textAlign: "center", marginTop: "50px" }}>
+                            <div
+                                className="montserrat"
+                                style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
+                                onClick={() => window.open('https://www.instagram.com/p/C--dKtcpNeu/', '_blank')}
+                            >
+                                <i className="pi pi-instagram" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
+                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Curta e compartilhe nossos<br></br> posts no Instagram!</span>
+                            </div>
+                            <div
+                                className="montserrat"
+                                style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
+                                onClick={() => window.open('https://api.whatsapp.com/send?text=Conheça%20as%20propostas%20do%20Pedro%20Varanda%20para%20nossa%20cidade!%20Acesse%20o%20site:%20https://www.pedrovaranda.com', '_blank')}
+                            >
+                                <i className="pi pi-whatsapp" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
+                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Compartilhe nosso site<br></br> no Whatsapp!</span>
+                            </div>
+                            <div
+                                className="montserrat"
+                                style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
+                                onClick={() => window.open('https://www.facebook.com/photo/?fbid=8571338282878677&set=a.676783815667536&locale=pt_BR', '_blank')}
+                            >
+                                <i className="pi pi-facebook" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
+                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Curta e compartilhe nossos<br></br> posts no Facebook!</span>
+                            </div>
+                        </div>
+                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Muito Obrigado!</div>
                     </div>
                 </div>
 
-                <div id="join-container">
-                    <img className="hands-img" src="/images/png/border-coffee.png" width={500}></img>
-                    <div className="content">
-                        <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center' }}>Registre-se e ganhe 15% de desconto!</div>
-                        <div className="lato-bold hide-text-full" style={{ fontSize: '16px', textAlign: 'center', margin: '10px 0px 20px 0px' }}>Inscreva-se na nossa newsletter e seja o primeiro a saber sobre ofertas exclusivas, novos produtos e promoções especiais.<br></br><span className="hide-text">Não perca a chance de aproveitar 15% de desconto na sua primeira compra!</span></div>
-                        <div className="email-input-container" style={{ display: 'flex' }}>
-                            <IconField iconPosition="left" className="email-input" style={{ width: '75%' }}>
-                                <InputIcon className="pi pi-envelope w-full" style={{ marginLeft: '5px' }}> </InputIcon>
-                                <InputText className="round-input w-full" style={{ paddingLeft: '38px' }} value={value} onChange={(e) => setValue(e.target.value)} />
-                            </IconField>
-                            <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginLeft: '5px' }}>REGISTRAR-SE</div>
-                        </div>
-                    </div>
-                    <img className="coffee-portion-img" src="/images/png/border-coffee.png" width={500}></img>
-                </div>
             </div>
-            <div className="footer-container">
+            {/* <div className="footer-container">
                 <img src="/images/png/coffee-beans-logo-light.png" width={120} style={{ height: '120px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img>
                 <div style={{ color: '#FFF', letterSpacing: '1px' }}>
                     <div className="bebas-neue-regular" style={{ fontSize: '20px' }}>REDES SOCIAIS</div>
@@ -515,7 +555,7 @@ export default function Home2() {
                         <div><i className="pi pi-linkedin" style={{ fontSize: '15px', color: '#FFF', cursor: 'pointer' }}></i></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
