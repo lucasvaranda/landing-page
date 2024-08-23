@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
 import LoginScreen from './components/Login/index';
-import Home from './components/Home/index';
+import Home2 from './components/Home2/index';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <Home />
+    element: <Home2 />
   },
   {
     path: '*',
