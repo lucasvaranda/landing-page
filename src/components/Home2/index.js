@@ -7,6 +7,8 @@ import { Button } from 'primereact/button';
 import { useNavigate } from "react-router-dom";
 import { Carousel } from 'primereact/carousel';
 import { Dialog } from 'primereact/dialog';
+import { Timeline } from 'primereact/timeline';
+import { Card } from 'primereact/card';
 import './index.scss';
 
 export default function Home2() {
@@ -19,6 +21,33 @@ export default function Home2() {
         let path = `../login`; 
         navigate(path, { replace: true })
     }
+
+    const events = [
+        { status: 'Chegada na Cidade', date: '1976', icon: 'pi pi-map-marker', color: '#20a7f9', image: '/images/png/eleicoes/img-1.jpg', description: "Nascido na capital de São Paulo, em junho de 1976, apareceu a oportunidade para eu trabalhar em Santa Isabel como supervisor de Controle de Qualidade na Karibe Indústria e Comércio, uma fábrica do setor têxtil especializada em fiação e tecelagem." },
+        { status: 'Relacionamento', date: '1977', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/foto-pai-mae.png', description: "Em 1977, conheci Maria José(Zella), que viria a se tornar minha esposa. Desde o início, percebi que ela era especial, com seu jeito cativante e uma alegria contagiante. Nossa conexão foi imediata e profunda, e com o tempo, o carinho e o respeito que sentíamos um pelo outro se transformaram em amor verdadeiro." },
+        { status: 'Criando Raízes', date: '1979', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/filha.jpeg', description: "Em 1979, fui abençoado com o nascimento da minha primeira filha, um momento que marcou o início da construção da minha família em Santa Isabel. Com a chegada dela, comecei a criar raízes nessa cidade que se tornou tão querida para mim." },
+        { status: 'Trajetória Profissional', date: '1983', icon: 'pi pi-shopping-cart', color: '#20a7f9', image: '/images/png/eleicoes/fabrica.jpeg', description: "A partir de 1983, minha trajetória profissional me levou por várias empresas. Comecei trabalhando em Diadema e, no início do ano seguinte, retornei à Karibe como supervisor de produção. Depois, passei também pela Santista e Paramount. Mais adiante, em 2007, voltei a Diadema para integrar a equipe da Jolitex Trenille, empresa de cobertores, o que me proporcionou a oportunidade de prestar serviços na Itália. Essa jornada foi marcada por diversas experiências que enriqueceram minha carreira e me permitiram crescer profissionalmente." },
+        { status: 'Filhos', date: '2000', icon: 'pi pi-check', color: '#88eb30', image: '/images/png/eleicoes/filhos.jpg', description: "Em 2000, fui abençoado com a chegada do meu terceiro filho, um momento que trouxe ainda mais alegria e completude para a nossa família. Com ele, nossa casa ficou ainda mais cheia de risos e energia, e percebi que estava construindo um legado de amor e união." },
+        { status: 'Netos', date: '2008', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
+        { status: 'Netos', date: '2008', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
+    ];
+
+    const customizedContent = (item) => {
+        return (
+            <Card title={item.status} subTitle={item.date}>
+                { item.image && <img src={item.image} style={{ maxHeight: "450px", objectFit: "cover" }} alt={item.name} width={"100%"} className="shadow-1" />}
+                <p>{item.description}</p>
+            </Card>
+        );
+    };
+
+    const customizedMarker = (item) => {
+        return (
+            <span className="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1" style={{ backgroundColor: item.color }}>
+                <i className={item.icon}></i>
+            </span>
+        );
+    };
 
     useEffect(() => {
         let debounceTimer;
@@ -424,14 +453,14 @@ export default function Home2() {
             <div className="image-container" style={{backgroundImage: 'url("/images/png/eleicoes/bg-pedro.png")' }}>
                 <div style={{ width: '68%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     {/* <img src="/images/png/coffee-beans-logo-light.png" style={{ width: '200px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img> */}
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', textAlign: "center" }}>Juntos por <br></br>uma Cidade Melhor</div>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', textShadow: "rgb(114 169 251 / 84%) 0px 0px 15px", margin: "15px 0px" }}>PEDRO VARANDA</div>
-                    <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', textAlign: "center", fontWeight: "700" }}>Juntos por <br></br>uma Cidade Melhor</div>
+                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', margin: "10px 0px 0px 0px", fontWeight: "700" }}>PEDRO VARANDA</div>
+                    {/* <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
                         <img src="/images/png/eleicoes/vote-icon.png" style={{ width: '70px', filter: 'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)', margin: '0px 15px' }} ></img>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
-                    </div>
-                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', textShadow: "rgb(114 169 251 / 84%) 0px 0px 15px", fontWeight: "600", letterSpacing: '18px' }}>20700</div>
+                    </div> */}
+                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', fontWeight: "600", letterSpacing: '18px' }}>20700</div>
 
                     
                     <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>SOBRE O CANDIDATO</div>
@@ -469,11 +498,8 @@ export default function Home2() {
                     <div className="lato-black title-text" style={{ fontSize: '26px', width: '100%', textAlign: 'center' }}>HISTÓRIA</div>
                     {/* <div className="whisper-regular" style={{ fontSize: '30px', width: '100%', textAlign: 'center' }}>História</div> */}
                     <div style={{ flexWrap: "wrap", display: "flex", alignItems: "center" }}>
-                        <div className="lato-bold" style={{ width: "70%", fontSize: "20px", padding: "0px 20px", marginBottom: "50px" }}>
-                            Há muitos anos, Pedro chegou a Santa Isabel em busca de novas oportunidades. Aqui, ele encontrou um lugar acolhedor onde decidiu se estabelecer e construir sua vida. Com o tempo, formou sua família e criou raízes profundas na cidade.<br></br><br></br>Pedro sempre esteve presente, participando ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando para o seu crescimento e prosperidade o seu crescimento e prosperidade.<br></br>Pedro  ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando para o seu crescimento e prosperidade.<br></br><br></br>Pedro sempre esteve presente, participando ativamente da vida local e contribuindo para o bem-estar de todos. Hoje, ele se orgulha de chamar esta cidade de lar e está comprometido em continuar trabalhando.
-                        </div>
-                        <div style={{ width: "25%", display: "flex", justifyContent: "flex-end" }}>
-                            <img src="/images/png/eleicoes/foto_1.png" style={{ boxShadow: "#31b44b 10px 10px 0px" }} width={300}></img>
+                        <div className="lato-bold" style={{ width: "100%", fontSize: "20px", padding: "0px 20px", margin: "50px 0px" }}>
+                            <Timeline value={events} align="alternate" className="customized-timeline" marker={customizedMarker} content={customizedContent} />
                         </div>
                     </div>
                     <img src="/images/png/eleicoes/Logo-podemos.png" style={{ position: "absolute", bottom: "40px", left: "50px" }} width={200}></img>

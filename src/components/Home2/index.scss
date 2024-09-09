@@ -22,8 +22,6 @@ body {
         flex-direction: column;
         background-size: cover;
         background-position: 30% 70%;
-        background-color: #b3c9ef;
-        background-blend-mode: multiply;
     }
 
     .icons-container {
@@ -101,7 +99,6 @@ body {
         padding: 20px 40px;
         font-family: "Lato", sans-serif;
         font-weight: 600;
-        text-shadow: rgb(114 169 251 / 65%) 0px 0px 10px;
         font-style: normal;
         letter-spacing: 2px;
         cursor: pointer;
@@ -253,7 +250,6 @@ body {
         background-color: #FFF;
         color: #398aca;
         min-height: 600px;
-        height: 600px;
         width: 100%;
         padding: 30px;
     }
@@ -674,4 +670,12 @@ body {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px #6e6a6c;
 	background-color: #3b383a;
+}
+
+.p-card {
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.075) !important;
+    .p-card-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
