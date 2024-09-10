@@ -24,12 +24,14 @@ export default function Home2() {
 
     const events = [
         { status: 'Chegada na Cidade', date: '1976', icon: 'pi pi-map-marker', color: '#20a7f9', image: '/images/png/eleicoes/img-1.jpg', description: "Nascido na capital de São Paulo, em junho de 1976, apareceu a oportunidade para eu trabalhar em Santa Isabel como supervisor de Controle de Qualidade na Karibe Indústria e Comércio, uma fábrica do setor têxtil especializada em fiação e tecelagem." },
-        { status: 'Relacionamento', date: '1977', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/foto-pai-mae.png', description: "Em 1977, conheci Maria José(Zella), que viria a se tornar minha esposa. Desde o início, percebi que ela era especial, com seu jeito cativante e uma alegria contagiante. Nossa conexão foi imediata e profunda, e com o tempo, o carinho e o respeito que sentíamos um pelo outro se transformaram em amor verdadeiro." },
+        { status: 'Relacionamento', date: '1977', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/foto-pai-mae-2.jpg', description: "Em 1977, conheci Maria José(Zella), que viria a se tornar minha esposa. Desde o início, percebi que ela era especial, com seu jeito cativante e uma alegria contagiante. Nossa conexão foi imediata e profunda, e com o tempo, o carinho e o respeito que sentíamos um pelo outro se transformaram em amor verdadeiro." },
         { status: 'Criando Raízes', date: '1979', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/filha.jpeg', description: "Em 1979, fui abençoado com o nascimento da minha primeira filha, um momento que marcou o início da construção da minha família em Santa Isabel. Com a chegada dela, comecei a criar raízes nessa cidade que se tornou tão querida para mim." },
         { status: 'Trajetória Profissional', date: '1983', icon: 'pi pi-shopping-cart', color: '#20a7f9', image: '/images/png/eleicoes/fabrica.jpeg', description: "A partir de 1983, minha trajetória profissional me levou por várias empresas. Comecei trabalhando em Diadema e, no início do ano seguinte, retornei à Karibe como supervisor de produção. Depois, passei também pela Santista e Paramount. Mais adiante, em 2007, voltei a Diadema para integrar a equipe da Jolitex Trenille, empresa de cobertores, o que me proporcionou a oportunidade de prestar serviços na Itália. Essa jornada foi marcada por diversas experiências que enriqueceram minha carreira e me permitiram crescer profissionalmente." },
         { status: 'Filhos', date: '2000', icon: 'pi pi-check', color: '#88eb30', image: '/images/png/eleicoes/filhos.jpg', description: "Em 2000, fui abençoado com a chegada do meu terceiro filho, um momento que trouxe ainda mais alegria e completude para a nossa família. Com ele, nossa casa ficou ainda mais cheia de risos e energia, e percebi que estava construindo um legado de amor e união." },
         { status: 'Netos', date: '2008', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
-        { status: 'Netos', date: '2008', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
+        { status: 'Igreja', date: '2009', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/img-igreja.jpg', description: "Minha esposa sempre foi uma frequentadora assídua da igreja católica, dedicando-se com devoção. Em 2009, senti o desejo de acompanhá-la e, juntos, começamos a colaborar nas decorações de arte sacra para as celebrações especiais da igreja, como a Festa do Divino, a festa da padroeira Nossa Senhora Aparecida e o Natal. Desde então, temos encontrado na casa do Pai um lugar de paz e propósito, onde servimos a Deus com alegria e gratidão, fortalecendo nossa fé e união a cada dia." },
+        { status: 'Paramount', date: '2015', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/paramount.png', description: "Durante todos os anos em que trabalhei na Paramount, construí laços profundos de amizade e gratidão com muitas pessoas que encontrei ao longo do caminho. O ambiente de trabalho se tornou mais do que apenas um lugar de ofício; foi um espaço onde compartilhei momentos significativos, desafios e conquistas ao lado de colegas que se tornaram verdadeiros amigos. Em 2015, tive a oportunidade de retornar à Paramount, onde permaneci até dezembro de 2023, consolidando ainda mais essas relações. Essa jornada me proporcionou não apenas crescimento profissional, mas também um legado de conexões humanas e lembranças que levarei comigo para sempre." },
+        { status: 'Bisnetos', date: '2023', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/foto-bisa.jpg', description: "Em 2023, fui abençoado com a chegada da minha bisneta Helena, somando agora dois bisnetos que enchem minha vida de alegria e orgulho. Ter bisnetos é uma experiência maravilhosa, que traz uma sensação de plenitude e renovação, enchendo nossa família de esperança e novos sonhos. Ver o crescimento da minha família e o futuro que se desenha à frente me inspira profundamente a buscar mudanças positivas, tanto para nossa cidade quanto para o bem-estar de todos. A responsabilidade de deixar um legado para as próximas gerações me motiva a contribuir para um futuro melhor, pensando sempre no que podemos fazer para tornar o mundo um lugar mais justo e próspero para o nosso povo e, especialmente, para minha família." },
     ];
 
     const customizedContent = (item) => {
@@ -425,12 +427,11 @@ export default function Home2() {
                 <div className="container">
                     <ul className="bebas-neue-regular side-menu-list">
                         <li><a onClick={(e) => changeLocation(e, "#image-container")}>INÍCIO</a></li>
-                        <li><a onClick={(e) => changeLocation(e, "#shop-container")}>LOJA</a></li>
-                        <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
-                        <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
-                        <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
-                        <li><a onClick={(e) => { toggleMenu(); setVisible(true);}}>REFERÊNCIA</a></li>
-                        <li><a onClick={(e) => routeChange()}>LOGIN</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#icons-container")}>VALORES</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#beans-container")}>INTRODUÇÃO</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#shop-container")}>HISTÓRIA</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#join-container")}>APRESENTAÇÃO</a></li>
+                        <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>COMPARTILHE</a></li>
                     </ul>
                     <div className="close-button">
                         <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#2b2527' }}></i>
@@ -441,12 +442,11 @@ export default function Home2() {
             <div id="navbar-container">
                 <ul className="bebas-neue-regular top-menu-list">
                     <li><a onClick={(e) => changeLocation(e, "#image-container")}>INÍCIO</a></li>
-                    <li><a onClick={(e) => changeLocation(e, "#shop-container")}>LOJA</a></li>
-                    <li><a onClick={(e) => changeLocation(e, "#beans-container")}>GRÃOS</a></li>
-                    <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>AVALIAÇÕES</a></li>
-                    <li><a onClick={(e) => changeLocation(e, "#join-container")}>REGISTRE-SE</a></li>
-                    <li><a onClick={(e) => setVisible(true)}>REFERÊNCIA</a></li>
-                    <li><a onClick={(e) => routeChange()}>LOGIN</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#icons-container")}>VALORES</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#beans-container")}>INTRODUÇÃO</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#shop-container")}>HISTÓRIA</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#join-container")}>APRESENTAÇÃO</a></li>
+                    <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>COMPARTILHE</a></li>
                 </ul>
                 <i className="pi pi-bars menu-button" onClick={ () => toggleMenu() } style={{ fontSize: '18px', color: '#FFF' }}></i>
             </div>
@@ -463,10 +463,10 @@ export default function Home2() {
                     <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', fontWeight: "600", letterSpacing: '18px' }}>20700</div>
 
                     
-                    <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>SOBRE O CANDIDATO</div>
+                    <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>HISTÓRIA</div>
                 </div>
             </div>
-            <div className="lato-bold icons-container" style={{ display: 'flex', justifyContent: 'space-around', margin: '150px 0px' }}>
+            <div id="icons-container" className="lato-bold icons-container" style={{ display: 'flex', justifyContent: 'space-around', margin: '150px 0px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: "#13406c" }}>
                     <img style={{ filter: "invert(18%) sepia(33%) saturate(2898%) hue-rotate(186deg) brightness(91%) contrast(89%)" }} src="/images/png/eleicoes/honesto.png" width={70}></img>
                     <span style={{ textAlign: 'center' }}>Transparência e Honestidade</span>
@@ -508,23 +508,10 @@ export default function Home2() {
                 <div id="join-container">
                     <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                     <div className="content">
-                        <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center' }}>PROPOSTAS</div>
-                        <div className="lato-bold hide-text-full propostas-list" style={{ fontSize: '16px', margin: '10px 0px 20px 0px', display: "flex" }}>
-                            <ul>
-                                <li>Melhoria na Infraestrutura das Estradas Rurais<span>Investir na pavimentação e manutenção das estradas rurais para facilitar o escoamento da produção agrícola e melhorar a mobilidade dos moradores</span></li>
-                                <li>Incentivo ao Turismo Local<span>Desenvolver projetos que valorizem os pontos turísticos da cidade, promovendo eventos culturais e melhorando a infraestrutura turística</span></li>
-                                <li>Fortalecimento da Educação Básica<span>Implementar programas de qualificação para professores, ampliar o acesso a materiais didáticos e melhorar a estrutura das escolas</span></li>
-                                <li>Ampliação dos Serviços de Saúde<span>Aumentar o número de unidades de saúde, contratar mais profissionais e melhorar o atendimento, garantindo acesso rápido e de qualidade</span></li>
-                                <li>Apoio ao Desenvolvimento Sustentável<span>Promover iniciativas que incentivem a preservação do meio ambiente, como programas de reflorestamento e uso de energias renováveis</span></li>
-                            </ul>
-                            <ul>
-                                <li>Valorização da Cultura e Tradições Locais<span>Apoiar eventos culturais, festivais e feiras que celebrem as tradições e a história da cidade, fortalecendo a identidade local</span></li>
-                                <li>Fomento ao Esporte e Lazer Comunitário<span>Construir e revitalizar espaços esportivos e de lazer, incentivando a prática de atividades físicas e promovendo a saúde da população</span></li>
-                                <li>Criação de Programas de Reciclagem<span>Estabelecer um sistema eficiente de coleta seletiva e reciclagem, promovendo a conscientização ambiental e a redução de resíduos</span></li>
-                                <li>Transparência e Participação Popular<span>Implementar canais de comunicação direta com a população, garantindo transparência nas decisões e maior participação nos processos políticos</span></li>
-                                <li>Investimento em Segurança Pública<span>Reforçar a segurança pública com o aumento do efetivo policial, instalação de câmeras de vigilância e parcerias com a comunidade para a prevenção da criminalidade</span></li>
-                            </ul>
-                        </div>
+                        <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center', marginBottom: "15px" }}><strong>CONTO COM O SEU VOTO!</strong> 20700!</div>
+                        <video width={"70%"} controls>
+                            <source src="/images/png/eleicoes/video.mp4"></source>
+                        </video>
                     </div>
                     <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                 </div>
