@@ -45,7 +45,7 @@ body {
             left: -350px; /* Posiciona o menu fora da tela à esquerda */
             width: 350px;
             height: 100%;
-            background-color: #a4c3d5;
+            background-color: #556269;
             transition: left 0.5s ease-in-out; /* Transição suave para o movimento do menu */
     
             .side-menu-list {
@@ -60,10 +60,10 @@ body {
                 }
                 li a {
                     display: flex;
-                    color: #2b2527 !important;
+                    color: #FFF !important;
                 }
                 a::after {
-                    background-color: #2b2527 !important;
+                    background-color: #FFF !important;
                 }
             }
     
@@ -313,6 +313,9 @@ body {
         color: #13406c;
         background-color: #FFF;
         height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .title {
             display: flex;
             flex-direction: column;
@@ -473,6 +476,7 @@ body {
 
         .p-timeline-event-content {
             padding-bottom: 50px;
+            text-align: left;
         }
 
         .p-timeline-vertical.p-timeline-alternate .p-timeline-event:nth-child(even) {

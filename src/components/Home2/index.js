@@ -127,7 +127,7 @@ export default function Home2() {
 
         if (targetElement) {
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-            const offsetPosition = elementPosition - 60;
+            const offsetPosition = elementPosition - 80;
 
             window.scrollTo({
                 top: offsetPosition,
@@ -434,7 +434,7 @@ export default function Home2() {
                         <li><a onClick={(e) => changeLocation(e, "#reviews-container")}>COMPARTILHE</a></li>
                     </ul>
                     <div className="close-button">
-                        <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#2b2527' }}></i>
+                        <i className="pi pi-times-circle" onClick={ () => toggleMenu() } style={{ fontSize: '24px', color: '#FFF' }}></i>
                     </div>
                 </div>
             </div>
@@ -463,7 +463,7 @@ export default function Home2() {
                     <div className="bebas-neue-regular text-3" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', fontWeight: "600", letterSpacing: '18px' }}>20700</div>
 
                     
-                    <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>HISTÓRIA</div>
+                    <div className="custom-buttom" onClick={(e) => changeLocation(e, "#icons-container")}>CONHECER!</div>
                 </div>
             </div>
             <div id="icons-container" className="lato-bold icons-container" style={{ display: 'flex', justifyContent: 'space-around', margin: '150px 0px' }}>
@@ -518,7 +518,7 @@ export default function Home2() {
                 
                 <div id="reviews-container">
                     <div className="title">
-                        <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Compartilhe!</div>
+                        <div className="whisper-regular" style={{ fontSize: '25px' }}>Compartilhe!</div>
                         {/* <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div> */}
                         <div className="lato-bold" style={{ width: "100%", display: "flex", justifyContent: "center", marginTop: "10px" }}>
                             <span style={{ width: "50%", textAlign: "center" }}>
@@ -537,7 +537,7 @@ export default function Home2() {
                             <div
                                 className="montserrat"
                                 style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
-                                onClick={() => window.open('https://api.whatsapp.com/send?text=Conheça%20as%20propostas%20do%20Pedro%20Varanda%20para%20nossa%20cidade!%20Acesse%20o%20site:%20https://www.pedrovaranda.com', '_blank')}
+                                onClick={() => window.open('https://api.whatsapp.com/send?text=Conheça%20Pedro%20Varanda!%20🌟%20Acesse%20o%20site%20e%20descubra%20mais%20de%20sua%20história%20e%20compromissos%20com%20nossa%20cidade.%20Vamos%20juntos%20fazer%20a%20diferença!%2020700!%20💪%20https://www.pedrovaranda.com', '_blank')}
                             >
                                 <i className="pi pi-whatsapp" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
                                 <span style={{ fontWeight: "700", marginTop: "10px" }}>Clique aqui!</span>
