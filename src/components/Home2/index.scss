@@ -709,6 +709,14 @@ body {
             }
         }
     }
+
+    @media only screen and (max-width: 360px) {
+        #beans-container {
+            .content {
+                padding: 0px 55px;
+            }
+        }
+    }
     
 }
 
