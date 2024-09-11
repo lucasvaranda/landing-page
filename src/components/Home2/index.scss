@@ -25,6 +25,7 @@ body {
     }
 
     .icons-container {
+        padding: 0px 30px;
         width: 60%;
     }
 
@@ -44,7 +45,7 @@ body {
             left: -350px; /* Posiciona o menu fora da tela à esquerda */
             width: 350px;
             height: 100%;
-            background-color: #d5c5a4;
+            background-color: #a4c3d5;
             transition: left 0.5s ease-in-out; /* Transição suave para o movimento do menu */
     
             .side-menu-list {
@@ -430,23 +431,25 @@ body {
     }
 
     @media only screen and (max-width: 1400px) {
-        #beans-container {
-            .hands-img {
-                left: -220px !important;
-            }
-    
-            .coffee-portion-img {
-                right: -80px !important;
-            }
-            
+        #join-container {
             .content {
-                margin-left: -90px;
-                width: 55% !important;
+                width: 100%;
+            }
+            video {
+                width: 60%;
+            }
+        }
+        
+        #beans-container {
+            .content {
+                padding: 0px 85px;
+                margin-left: 0px;
+                width: 100% !important;
                 .title-text {
                     font-size: 30px;
                 }
                 .small-text {
-                    display: none;
+                    font-size: 15px !important;
                 }
             }
         }
@@ -459,11 +462,23 @@ body {
         }
     
         .main-content-container {
-            width: 90% !important;
+            width: 100% !important;
         }
     }
     
     @media only screen and (max-width: 950px) {
+        .p-timeline-event-opposite {
+            display: none;
+        }
+
+        .p-timeline-event-content {
+            padding-bottom: 50px;
+        }
+
+        .p-timeline-vertical.p-timeline-alternate .p-timeline-event:nth-child(even) {
+            flex-direction: row;
+        }
+        
         .icons-container {
             width: 100%;
         }
@@ -486,27 +501,35 @@ body {
         
         #beans-container {
             .hands-img {
-                left: -143px !important;
-                top: -60px !important;
-                transform: rotate(147deg) !important;
+                width: 45px;
+                height: 100%;
+                object-fit: cover;
+                left: 0px !important;
+                top: 0px !important;
             }
     
             .coffee-portion-img {
-                top: unset !important;
-                bottom: -90px !important;
-                transform: rotate(121deg) !important;
-                right: -155px !important;
+                width: 45px;
+                height: 100%;
+                object-fit: cover;
+                top: 0px !important;
+                right: 0px !important;
             }
         }
     
         #join-container {
-            .hands-img {
-                bottom: -75px !important;
-                left: -32px !important;
+            .content {
+                width: 100%;
+                padding: 0px 50px;
             }
-            .coffee-portion-img {
-                top: -75px !important;
-                right: -32px !important;
+            .hands-img, .coffee-portion-img {
+                width: 45px;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            video {
+                width: 80%;
             }
     
             .hide-text {
@@ -523,13 +546,33 @@ body {
                 }
             }
         }
+
+        #reviews-container {
+            .title {
+                .lato-bold {
+                    span {
+                        width: 80% !important;
+                    }
+                }
+            }
+        }
     }
     
+    @media only screen and (max-width: 1000px) {
+        .image-container {
+            align-items: center !important;
+            background-position: 85% 15% !important;
+        }
+    }
     @media only screen and (max-width: 670px) {
         #join-container {
             .hide-text-full {
                 display: none;
             }
+        }
+
+        video {
+            width: 98% !important;
         }
 
         #join-container {
@@ -549,6 +592,11 @@ body {
             .p-carousel-container {
                 height: 305px;
             }
+        }
+
+        .podemos-logo {
+            width: 150px;
+            left: 30px !important;
         }
     }
     
@@ -597,6 +645,15 @@ body {
 
     }
     @media only screen and (max-width: 550px) {
+        .image-container {
+            .text-1 {
+                font-size: 30px !important;
+            }
+            .text-2 {
+                font-size: 60px !important;
+            }
+        }
+
         #shop-container {
             padding-right: 0px;
             padding-left: 0px;

@@ -24,20 +24,20 @@ export default function Home2() {
 
     const events = [
         { status: 'Chegada na Cidade', date: '1976', icon: 'pi pi-map-marker', color: '#20a7f9', image: '/images/png/eleicoes/img-1.jpg', description: "Nascido na capital de São Paulo, em junho de 1976, apareceu a oportunidade para eu trabalhar em Santa Isabel como supervisor de Controle de Qualidade na Karibe Indústria e Comércio, uma fábrica do setor têxtil especializada em fiação e tecelagem." },
-        { status: 'Relacionamento', date: '1977', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/foto-pai-mae-2.jpg', description: "Em 1977, conheci Maria José(Zella), que viria a se tornar minha esposa. Desde o início, percebi que ela era especial, com seu jeito cativante e uma alegria contagiante. Nossa conexão foi imediata e profunda, e com o tempo, o carinho e o respeito que sentíamos um pelo outro se transformaram em amor verdadeiro." },
-        { status: 'Criando Raízes', date: '1979', icon: 'pi pi-cog', color: '#88eb30', image: '/images/png/eleicoes/filha.jpeg', description: "Em 1979, fui abençoado com o nascimento da minha primeira filha, um momento que marcou o início da construção da minha família em Santa Isabel. Com a chegada dela, comecei a criar raízes nessa cidade que se tornou tão querida para mim." },
-        { status: 'Trajetória Profissional', date: '1983', icon: 'pi pi-shopping-cart', color: '#20a7f9', image: '/images/png/eleicoes/fabrica.jpeg', description: "A partir de 1983, minha trajetória profissional me levou por várias empresas. Comecei trabalhando em Diadema e, no início do ano seguinte, retornei à Karibe como supervisor de produção. Depois, passei também pela Santista e Paramount. Mais adiante, em 2007, voltei a Diadema para integrar a equipe da Jolitex Trenille, empresa de cobertores, o que me proporcionou a oportunidade de prestar serviços na Itália. Essa jornada foi marcada por diversas experiências que enriqueceram minha carreira e me permitiram crescer profissionalmente." },
-        { status: 'Filhos', date: '2000', icon: 'pi pi-check', color: '#88eb30', image: '/images/png/eleicoes/filhos.jpg', description: "Em 2000, fui abençoado com a chegada do meu terceiro filho, um momento que trouxe ainda mais alegria e completude para a nossa família. Com ele, nossa casa ficou ainda mais cheia de risos e energia, e percebi que estava construindo um legado de amor e união." },
-        { status: 'Netos', date: '2008', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
-        { status: 'Igreja', date: '2009', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/img-igreja.jpg', description: "Minha esposa sempre foi uma frequentadora assídua da igreja católica, dedicando-se com devoção. Em 2009, senti o desejo de acompanhá-la e, juntos, começamos a colaborar nas decorações de arte sacra para as celebrações especiais da igreja, como a Festa do Divino, a festa da padroeira Nossa Senhora Aparecida e o Natal. Desde então, temos encontrado na casa do Pai um lugar de paz e propósito, onde servimos a Deus com alegria e gratidão, fortalecendo nossa fé e união a cada dia." },
-        { status: 'Paramount', date: '2015', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/paramount.png', description: "Durante todos os anos em que trabalhei na Paramount, construí laços profundos de amizade e gratidão com muitas pessoas que encontrei ao longo do caminho. O ambiente de trabalho se tornou mais do que apenas um lugar de ofício; foi um espaço onde compartilhei momentos significativos, desafios e conquistas ao lado de colegas que se tornaram verdadeiros amigos. Em 2015, tive a oportunidade de retornar à Paramount, onde permaneci até dezembro de 2023, consolidando ainda mais essas relações. Essa jornada me proporcionou não apenas crescimento profissional, mas também um legado de conexões humanas e lembranças que levarei comigo para sempre." },
-        { status: 'Bisnetos', date: '2023', icon: 'pi pi-check', color: '#20a7f9', image: '/images/png/eleicoes/foto-bisa.jpg', description: "Em 2023, fui abençoado com a chegada da minha bisneta Helena, somando agora dois bisnetos que enchem minha vida de alegria e orgulho. Ter bisnetos é uma experiência maravilhosa, que traz uma sensação de plenitude e renovação, enchendo nossa família de esperança e novos sonhos. Ver o crescimento da minha família e o futuro que se desenha à frente me inspira profundamente a buscar mudanças positivas, tanto para nossa cidade quanto para o bem-estar de todos. A responsabilidade de deixar um legado para as próximas gerações me motiva a contribuir para um futuro melhor, pensando sempre no que podemos fazer para tornar o mundo um lugar mais justo e próspero para o nosso povo e, especialmente, para minha família." },
+        { status: 'Relacionamento', date: '1977', icon: 'pi pi-heart', color: '#88eb30', image: '/images/png/eleicoes/foto-pai-mae-2.jpg', description: "Em 1977, conheci Maria José(Zella), que viria a se tornar minha esposa. Desde o início, percebi que ela era especial, com seu jeito cativante e uma alegria contagiante. Nossa conexão foi imediata e profunda, e com o tempo, o carinho e o respeito que sentíamos um pelo outro se transformaram em amor verdadeiro." },
+        { status: 'Criando Raízes', date: '1979', icon: 'pi pi-users', color: '#20a7f9', image: '/images/png/eleicoes/filha.jpeg', description: "Em 1979, fui abençoado com o nascimento da minha primeira filha, um momento que marcou o início da construção da minha família em Santa Isabel. Com a chegada dela, comecei a criar raízes nessa cidade que se tornou tão querida para mim." },
+        { status: 'Trajetória Profissional', date: '1983', icon: 'pi pi-briefcase', color: '#88eb30', image: '/images/png/eleicoes/fabrica.jpeg', description: "A partir de 1983, minha trajetória profissional me levou por várias empresas. Comecei trabalhando em Diadema e, no início do ano seguinte, retornei à Karibe como supervisor de produção. Depois, passei também pela Santista e Paramount. Mais adiante, em 2007, voltei a Diadema para integrar a equipe da Jolitex Trenille, empresa de cobertores, o que me proporcionou a oportunidade de prestar serviços na Itália. Essa jornada foi marcada por diversas experiências que enriqueceram minha carreira e me permitiram crescer profissionalmente." },
+        { status: 'Filhos', date: '2000', icon: 'pi pi-users', color: '#20a7f9', image: '/images/png/eleicoes/filhos.jpg', description: "Em 2000, fui abençoado com a chegada do meu terceiro filho, um momento que trouxe ainda mais alegria e completude para a nossa família. Com ele, nossa casa ficou ainda mais cheia de risos e energia, e percebi que estava construindo um legado de amor e união." },
+        { status: 'Netos', date: '2008', icon: 'pi pi-users', color: '#88eb30', image: '/images/png/eleicoes/netos.jpg', description: "Em 2008, fui agraciado com a chegada da minha quarta neta, um presente que encheu nossa família de ainda mais amor e alegria. Ver a família crescer e acompanhar as novas gerações traz um sentimento indescritível de gratidão e orgulho. Cada neto representa uma nova esperança e uma continuação do legado que construímos ao longo dos anos." },
+        { status: 'Igreja', date: '2009', icon: 'pi pi-building-columns', color: '#20a7f9', image: '/images/png/eleicoes/img-igreja.jpg', description: "Minha esposa sempre foi uma frequentadora assídua da igreja católica, dedicando-se com devoção. Em 2009, senti o desejo de acompanhá-la e, juntos, começamos a colaborar nas decorações de arte sacra para as celebrações especiais da igreja, como a Festa do Divino, a festa da padroeira Nossa Senhora Aparecida e o Natal. Desde então, temos encontrado na casa do Pai um lugar de paz e propósito, onde servimos a Deus com alegria e gratidão, fortalecendo nossa fé e união a cada dia." },
+        { status: 'Paramount', date: '2015', icon: 'pi pi-briefcase', color: '#88eb30', image: '/images/png/eleicoes/paramount.png', description: "Durante todos os anos em que trabalhei na Paramount, construí laços profundos de amizade e gratidão com muitas pessoas que encontrei ao longo do caminho. O ambiente de trabalho se tornou mais do que apenas um lugar de ofício; foi um espaço onde compartilhei momentos significativos, desafios e conquistas ao lado de colegas que se tornaram verdadeiros amigos. Em 2015, tive a oportunidade de retornar à Paramount, onde permaneci até dezembro de 2023, consolidando ainda mais essas relações. Essa jornada me proporcionou não apenas crescimento profissional, mas também um legado de conexões humanas e lembranças que levarei comigo para sempre." },
+        { status: 'Bisnetos', date: '2023', icon: 'pi pi-home', color: '#20a7f9', image: '/images/png/eleicoes/bisnetos.jpg', description: "Em 2023, fui abençoado com a chegada da minha bisneta Helena, somando agora dois bisnetos que enchem minha vida de alegria e orgulho. Ter bisnetos é uma experiência maravilhosa, que traz uma sensação de plenitude e renovação, enchendo nossa família de esperança e novos sonhos. Ver o crescimento da minha família e o futuro que se desenha à frente me inspira profundamente a buscar mudanças positivas, tanto para nossa cidade quanto para o bem-estar de todos. A responsabilidade de deixar um legado para as próximas gerações me motiva a contribuir para um futuro melhor, pensando sempre no que podemos fazer para tornar o mundo um lugar mais justo e próspero para o nosso povo e, especialmente, para minha família." },
     ];
 
     const customizedContent = (item) => {
         return (
             <Card title={item.status} subTitle={item.date}>
-                { item.image && <img src={item.image} style={{ maxHeight: "450px", objectFit: "cover" }} alt={item.name} width={"100%"} className="shadow-1" />}
+                { item.image && <img src={item.image} className={"shadow-1 "+item.status} style={{ maxHeight: "450px", objectFit: "cover" }} alt={item.name} width={"100%"} />}
                 <p>{item.description}</p>
             </Card>
         );
@@ -453,14 +453,14 @@ export default function Home2() {
             <div className="image-container" style={{backgroundImage: 'url("/images/png/eleicoes/bg-pedro.png")' }}>
                 <div style={{ width: '68%', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     {/* <img src="/images/png/coffee-beans-logo-light.png" style={{ width: '200px', filter: 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%)' }} ></img> */}
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', textAlign: "center", fontWeight: "700" }}>Juntos por <br></br>uma Cidade Melhor</div>
-                    <div className="montserrat" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', margin: "10px 0px 0px 0px", fontWeight: "700" }}>PEDRO VARANDA</div>
-                    {/* <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
+                    <div className="montserrat text-1" style={{ zIndex: 3, color: '#FFF', fontSize: '40px', textAlign: "center", fontWeight: "700" }}>Juntos por <br></br>uma Cidade Melhor</div>
+                    <div className="montserrat text-2" style={{ zIndex: 3, color: '#FFF', fontSize: '75px', textAlign: 'center', margin: "10px 0px 10px 0px", fontWeight: "700" }}>PEDRO VARANDA</div>
+                    <div style={{ marginBottom: '13px', display: 'flex', alignItems: 'center' }}>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
                         <img src="/images/png/eleicoes/vote-icon.png" style={{ width: '70px', filter: 'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)', margin: '0px 15px' }} ></img>
                         <div style={{color: '#FFF', marginTop: '-15px' }}>______</div>
-                    </div> */}
-                    <div className="bebas-neue-regular" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', fontWeight: "600", letterSpacing: '18px' }}>20700</div>
+                    </div>
+                    <div className="bebas-neue-regular text-3" style={{ zIndex: 3, color: '#FFF', fontSize: '100px', marginBottom: '30px', textAlign: 'center', fontWeight: "600", letterSpacing: '18px' }}>20700</div>
 
                     
                     <div className="custom-buttom" onClick={(e) => changeLocation(e, "#shop-container")}>HISTÓRIA</div>
@@ -502,14 +502,14 @@ export default function Home2() {
                             <Timeline value={events} align="alternate" className="customized-timeline" marker={customizedMarker} content={customizedContent} />
                         </div>
                     </div>
-                    <img src="/images/png/eleicoes/Logo-podemos.png" style={{ position: "absolute", bottom: "40px", left: "50px" }} width={200}></img>
+                    <img src="/images/png/eleicoes/Logo-podemos.png" className="podemos-logo" style={{ position: "absolute", bottom: "40px", left: "50px" }} width={200}></img>
                 </div>
 
                 <div id="join-container">
                     <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                     <div className="content">
                         <div className="lato-black main-title" style={{ fontSize: '40px', textAlign: 'center', marginBottom: "15px" }}><strong>CONTO COM O SEU VOTO!</strong> 20700!</div>
-                        <video width={"70%"} controls>
+                        <video width={"70%"} controls autoPlay playsInline>
                             <source src="/images/png/eleicoes/video.mp4"></source>
                         </video>
                     </div>
@@ -522,34 +522,34 @@ export default function Home2() {
                         {/* <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div> */}
                         <div className="lato-bold" style={{ width: "100%", display: "flex", justifyContent: "center", marginTop: "10px" }}>
                             <span style={{ width: "50%", textAlign: "center" }}>
-                                Sua participação faz toda a diferença! Curta, compartilhe e comente nossas<br></br> publicações para nos ajudar a alcançar mais pessoas. Cada curtida, cada compartilhamento, é um passo a mais para fortalecer nossa mensagem e mostrar que juntos podemos transformar nossa cidade!
+                            Sua participação faz toda a diferença! Compartilhe nosso site sobre o candidato Pedro Varanda no WhatsApp. Assim, você ajuda a espalhar a história e os valores do Pedro para mais pessoas. Agradecemos muito o seu apoio!
                             </span>
                         </div>
                         <div style={{ display: "flex", width: "100%", justifyContent: "space-around", padding: "0px 50px", textAlign: "center", marginTop: "50px" }}>
-                            <div
+                            {/* <div
                                 className="montserrat"
                                 style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
                                 onClick={() => window.open('https://www.instagram.com/p/C--dKtcpNeu/', '_blank')}
                             >
                                 <i className="pi pi-instagram" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
                                 <span style={{ fontWeight: "700", marginTop: "10px" }}>Curta e compartilhe nossos<br></br> posts no Instagram!</span>
-                            </div>
+                            </div> */}
                             <div
                                 className="montserrat"
                                 style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
                                 onClick={() => window.open('https://api.whatsapp.com/send?text=Conheça%20as%20propostas%20do%20Pedro%20Varanda%20para%20nossa%20cidade!%20Acesse%20o%20site:%20https://www.pedrovaranda.com', '_blank')}
                             >
                                 <i className="pi pi-whatsapp" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
-                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Compartilhe nosso site<br></br> no Whatsapp!</span>
+                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Clique aqui!</span>
                             </div>
-                            <div
+                            {/* <div
                                 className="montserrat"
                                 style={{ display: "flex", width: "33%", flexDirection: "column", alignItems: "center" }}
                                 onClick={() => window.open('https://www.facebook.com/photo/?fbid=8571338282878677&set=a.676783815667536&locale=pt_BR', '_blank')}
                             >
                                 <i className="pi pi-facebook" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
                                 <span style={{ fontWeight: "700", marginTop: "10px" }}>Curta e compartilhe nossos<br></br> posts no Facebook!</span>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Muito Obrigado!</div>
                     </div>
