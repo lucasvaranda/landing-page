@@ -540,7 +540,7 @@ export default function Home2() {
                                 onClick={() => window.open('https://api.whatsapp.com/send?text=Conheça%20Pedro%20Varanda!%20🌟%20Acesse%20o%20site%20e%20descubra%20mais%20de%20sua%20história%20e%20compromissos%20com%20nossa%20cidade.%20Vamos%20juntos%20fazer%20a%20diferença!%2020700!%20💪%20https://www.pedrovaranda.com', '_blank')}
                             >
                                 <i className="pi pi-whatsapp" style={{ fontSize: '50px', cursor: 'pointer' }}></i>
-                                <span style={{ fontWeight: "700", marginTop: "10px" }}>Clique aqui!</span>
+                                <span style={{ fontWeight: "700", marginTop: "10px", whiteSpace: "nowrap" }}>Clique aqui!</span>
                             </div>
                             {/* <div
                                 className="montserrat"
