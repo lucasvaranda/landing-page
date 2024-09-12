@@ -489,7 +489,7 @@ export default function Home2() {
                     <img className="hands-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                     <div className="content">
                         <div className="lato-black title-text">Seu voto faz a diferença com Pedro Varanda!</div>
-                        <div className="lato-bold small-text" style={{ fontSize: '18px' }}>Pretendo focar em áreas essenciais como turismo, meio ambiente, estradas rurais, saúde, educação, cultura, esporte e lazer. Quero promover o desenvolvimento sustentável, melhorar a infraestrutura, e garantir que cada cidadão tenha acesso a serviços de qualidade. Juntos, podemos transformar nossa cidade em um lugar melhor para viver e crescer.<br></br><br></br> Com seu voto, faremos a diferença e construíremos um futuro mais promissor para todos.</div>
+                        <div className="lato-bold small-text" style={{ fontSize: '18px' }}>Pretendo focar em áreas essenciais como turismo, meio ambiente, estradas rurais, saúde, educação, cultura, esporte e lazer. Quero garantir que cada cidadão tenha acesso a serviços de qualidade. Juntos, podemos transformar nossa cidade em um lugar melhor para viver e crescer.<br></br><br></br> Com seu voto, faremos a diferença e construíremos um futuro mais promissor para todos.</div>
                         {/* <div className="buy-button lato-regular" style={{ borderRadius: '50px', marginTop: '30px' }}>COMPRAR</div> */}
                     </div>
                     <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
