@@ -516,7 +516,7 @@ export default function Home2() {
                     <img className="coffee-portion-img" src="/images/png/eleicoes/icon-bar.png" width={62}></img>
                 </div>
                 
-                <div id="reviews-container">
+                <div id="reviews-container" style={{ position: "relative" }}>
                     <div className="title">
                         <div className="whisper-regular" style={{ fontSize: '25px' }}>Compartilhe!</div>
                         {/* <div className="bebas-neue-regular" style={{ fontSize: '35px', letterSpacing: '2px', marginTop: '5px', textAlign: 'center' }}>NOSSOS&nbsp; CLIENTES&nbsp; SATISFEITOS</div> */}
@@ -553,6 +553,7 @@ export default function Home2() {
                         </div>
                         <div className="whisper-regular" style={{ fontSize: '25px', marginTop: '65px' }}>Muito Obrigado!</div>
                     </div>
+                    <div style={{ position: "absolute", bottom: "15px", left: "0px", width: "100%", textAlign: "center", fontSize: "12px", fontWeight: "500" }}>CNPJ: 56.478.691/0001-98</div>
                 </div>
 
             </div>
